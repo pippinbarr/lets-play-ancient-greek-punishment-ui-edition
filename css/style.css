@@ -1,0 +1,302 @@
+
+body {
+  background-color: #aaa;
+  user-select: none;
+  word-wrap: break-word;
+  margin: 0;
+  overflow: hidden;
+  font-family: "MS Sans Serif", Arial, sans-serif;
+}
+
+#wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+#app-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100px;
+  display: block;
+}
+
+.icon {
+  width: 100px;
+  text-align: center;
+}
+
+.icon-label {
+  width: 100px;
+  text-align: center;
+  color: black;
+  padding-top: 0px;
+}
+
+#title-screen {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 340px;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+  border-bottom: 4px solid #555;
+  border-right: 4px solid #555;
+  background-color: #bbb;
+  z-index: 1000;
+}
+
+#title-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #bbb;
+}
+
+#title {
+  position: absolute;
+  top: 20px;
+  margin-top: 20px;
+  margin-left: 110px;
+  width: 190px;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+  border-bottom: 4px solid #555;
+  border-right: 4px solid #555;
+  padding: 10px;
+  text-align: right;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Times, serif;
+  color: black;
+  background-color: #bbb;
+}
+
+#author {
+  position: absolute;
+  width: 190px;
+  bottom: 20px;
+  padding: 20px;
+  margin-left: 110px;
+  text-align: right;
+  font-size: 1em;
+  font-weight: normal;
+  font-family: Times, serif;
+  color: black;
+}
+
+#heart {
+  /* position: relative; */
+  /* margin-left: 10px; */
+  margin: 10px;
+}
+
+#talk input {
+  width: 100%;
+}
+
+:focus {
+  outline: none;
+}
+
+#sliderWrapper {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+#slider {
+  height: 200px;
+  margin: 0 auto;
+}
+
+.textBox {
+  width: 100%;
+  border-top: solid 2px black;
+  border-left: solid 2px black;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin-bottom: 1em;
+  overflow-y: hidden;
+}
+
+.text {
+  font-family: "MS Sans Serif", Arial, sans-serif;
+  font-size: 1em;
+  padding: 2px;
+}
+
+
+#messagesBox {
+  width: 100%;
+  border-top: solid 2px black;
+  border-left: solid 2px black;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin-bottom: 1em;
+  height: 3em;
+  overflow-y: hidden;
+}
+
+#messages {
+  font-family: "MS Sans Serif", Arial, sans-serif;
+  font-size: 1em;
+  padding: 2px;
+}
+
+#progress {
+  background-color: white;
+  border-top: solid 2px black;
+  border-left: solid 2px black;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  height: 1.5em;
+}
+
+
+
+/* DIALOGS
+----------------------------------*/
+
+/* Removing divider between message and buttons */
+.ui-dialog .ui-dialog-buttonpane {
+	border-width: 0px 0 0 0;
+}
+
+/* RADIOS
+----------------------------------*/
+
+.ui-checkboxradio-label .ui-icon-background {
+	box-shadow: none;
+}
+
+.ui-button.ui-checkboxradio-label {
+  border: 0px;
+}
+
+.ui-checkboxradio-label .ui-checkboxradio-icon {
+  background-color: white;
+}
+.ui-checkboxradio-label.ui-checkboxradio-checked .ui-checkboxradio-icon {
+  background-color: white;
+}
+
+
+
+/* BUTTONS
+----------------------------------*/
+
+/* Adjusting borders to make it more 3D old school */
+
+button.ui-button,
+html button.ui-button.ui-state-disabled:hover,
+html button.ui-button.ui-state-disabled:active {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+
+	background: #ccc;
+	font-weight: normal;
+	color: #222;
+}
+
+a.ui-button,
+a:link.ui-button,
+a:visited.ui-button,
+button.ui-button {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+
+	text-decoration: none;
+}
+
+button.ui-button:hover,
+button.ui-button:focus {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+
+	background: #ccc;
+	font-weight: normal;
+	color: #222;
+}
+
+a.ui-button:hover,
+a.ui-button:focus {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+
+	color: #222;
+	text-decoration: none;
+}
+
+a.ui-button:active,
+button.ui-button:active,
+button.ui-button.ui-state-active:hover {
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+
+	background: #eee;
+	font-weight: normal;
+	color: #000;
+}
+
+
+/* ORIGINAL STYLE */
+
+
+
+/* Slider styling */
+
+.ui-slider-handle {
+  height: 10px !important;
+  border-top: 2px solid #fff !important;
+  border-left: 2px solid #fff !important;
+  border-right: 2px solid #000 !important;
+  border-bottom: 2px solid #000 !important;
+  margin-left: -7px !important;
+}
+
+.ui-slider {
+  width: 0px !important;
+  background: black !important;
+  border-top: 2px solid #000 !important;
+  border-left: 2px solid #000 !important;
+  border-right: 2px solid #fff !important;
+  border-bottom: 2px solid #fff !important;
+}
+
+.ui-slider-pips .ui-slider-line {
+  /* border-color: black !important; */
+  background: black !important;
+  width: 5px !important;
+  height: 2px !important;
+  margin-left: -8px !important;
+  margin-top: 2px;
+}
+
+.ui-slider-pips .ui-slider-label {
+  color: black !important;
+  font-weight: normal !importat;
+  /* display: none !important; */
+}
+
+.ui-slider-pip-selected {
+  font-weight: normal !important;
+}
+
+.ui-slider-pip-initial {
+  font-weight: normal !important;
+}
