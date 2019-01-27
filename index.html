@@ -14,22 +14,22 @@
   <link rel="stylesheet" type="text/css" href="css/jquery-ui-slider-pips.css" />
 
   <!-- Include jQuery -->
-  <script src="js/jquery.min.js"></script>
+  <script src="js/libraries/jquery.min.js"></script>
 
   <!-- Include jQuery UI -->
   <link rel="stylesheet" href="css/jquery-ui.min.css">
   <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
 
-  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/libraries/jquery-ui.min.js"></script>
 
   <!-- Include touch punch for jQuery -->
-  <script src="js/jquery.ui.touch-punch.min.js"></script>
+  <script src="js/libraries/jquery.ui.touch-punch.min.js"></script>
 
   <!-- Include slider pips for jQuery UI -->
-  <script src="js/jquery-ui-slider-pips.js"></script>
+  <script src="js/libraries/jquery-ui-slider-pips.js"></script>
 
   <!-- Howler for audio -->
-  <script src="js/howler.core.min.js"></script>
+  <script src="js/libraries/howler.core.min.js"></script>
 
   <!-- Include the script file -->
   <script src="js/script.js"></script>
@@ -39,8 +39,11 @@
 <!-- Comment about the body of the HTML -->
 
 <body>
-  <div title="Well hello there">
-    Shall we then?
+  <div id="sisyphus-dialog" title="Sisyphus">
+    <div class="instruction">Set the slider to 10.</div>
+    <div id="sisyphus-slider-wrapper">
+      <div id="sisyphus-slider"></div>
+    </div>
   </div>
 </body>
 

@@ -1,11 +1,13 @@
 # Sisyphus
 
-- Get a dialog box with a slider in it
-- Try out the slider at a diagonal
-- Get a confirmation button going
-- Make the slider slide (lerp) back down when you release it
-- Make sure the instruction is clear
-- No closing the dialog ever
+- ~~Get a dialog box with a slider in it~~
+- ~~__LOOKS TOO WEIRD__ Try out the slider at a diagonal~~
+- ~~Get a confirmation button going~~
+- ~~Make the slider slide (lerp) back down when you release it~~
+- ~~Make sure the instruction is clear~~
+- ~~__DID IT IN CSS__ Look into the issue of clicking on a slider pip - basically just want to disable them~~
+- ~~No closing the dialog ever~~
+
 - Have an icon on the desktop to launch the app
 
 # Danaids
