@@ -7,8 +7,7 @@
 - ~~Make sure the instruction is clear~~
 - ~~__DID IT IN CSS__ Look into the issue of clicking on a slider pip - basically just want to disable them~~
 - ~~No closing the dialog ever~~
-
-- Have an icon on the desktop to launch the app
+- ~~Have an icon on the desktop to launch the app~~
 
 # Danaids
 

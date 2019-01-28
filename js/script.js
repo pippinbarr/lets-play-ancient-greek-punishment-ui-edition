@@ -20,7 +20,9 @@ https://github.com/simeydotme/jQuery-ui-Slider-Pips
 ******************************************************/
 
 
+let $sisyphusDialog;
 let $sisyphusSlider;
+let $sisyphusIcon;
 
 $(document).ready(function () {
 
@@ -30,8 +32,18 @@ $(document).ready(function () {
 
 // Set up Sisyphus dialog with instruction and slider
 function setupSisyphus() {
+
+  // Set up  the icon
+  $sisyphusIcon = $('#sisyphus-icon');
+  $sisyphusIcon.draggable();
+  $sisyphusIcon.on('dblclick',function() {
+    $sisyphusDialog.dialog('open');
+  });
+
+  $sisyphusDialog = $('#sisyphus-dialog');
+
   // Create the dialog to house the "app"
-  $('#sisyphus-dialog').dialog({
+  $sisyphusDialog.dialog({
     // You can specify buttons as an array of objects to get finer-grained control
     // In this instance I want to assign an id for later reference
     buttons: [
@@ -44,10 +56,11 @@ function setupSisyphus() {
         }
       }
     ],
-    closeOnEscape: false
+    closeOnEscape: false,
+    autoOpen: false
   });
   // Get rid of the 'x' button on the menu bar
-$('#sisyphus-dialog').parent().find(".ui-dialog-titlebar-close").hide();
+  $sisyphusDialog.parent().find(".ui-dialog-titlebar-close").hide();
 
   // We disable the button at the start (the slider will start at 0)
   $('#sisyphus-submit').button('disable');
