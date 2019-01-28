@@ -32,7 +32,11 @@ $(document).ready(function () {
 
 });
 
-// Set up Sisyphus icon and dialog with instruction and slider
+// Set up Sisyphus app
+//
+// In Sisyphus you drag a slider to the maximum value only to see it
+// slide immediately back down to the bottom, such that you can never
+// submit the dialog to get out.
 function setupSisyphus() {
 
   let $sisyphusDialog = $('#sisyphus-dialog');
@@ -131,6 +135,10 @@ function setupSisyphus() {
 
 
 // Set up the Danaids app
+//
+// In Danaids (for now) you try to drag a file of water (an image)
+// into a folder that represents the Bath, and it never succeeds, just
+// reverting all your efforts.
 function setupDanaids() {
   // Set up  the icon
   let  $danaidsIcon = $('#danaids-icon');
@@ -149,22 +157,31 @@ function setupDanaids() {
   // Get rid of the 'x' button on the menu bar
   $danaidsDialog.parent().find(".ui-dialog-titlebar-close").hide();
 
+  // Make the water icon draggable and tell it to revert if dragged to the folder
+  // That's literally the punishment moment.
   let $waterIcon = $('#water-icon');
   $waterIcon.draggable({
     revert: 'valid'
   });
+  // Center it
   $waterIcon.css('margin','0 auto');
 
+  // Make the folder icon droppable  (so the drag recognizes it) and give it a
+  // highlight when the water is over it
   let $folderIcon = $('#folder-icon');
   $folderIcon.droppable({
     classes: {
         "ui-droppable-hover": "ui-state-hover"
       }
   });
+  // Center it
   $folderIcon.css('margin','0 auto');
 }
 
 // Set up the Tantalus app
+//
+// In Tantalus you're asked to select a food or drink but when you open the
+// menu both options are disabled. Most of this is actually in the HTML.
 function setupTantalus() {
   // Set up  the icon
   let  $tantalusIcon = $('#tantalus-icon');
@@ -192,14 +209,13 @@ function setupTantalus() {
       }
     ],
   });
+  // Get rid of the 'x' button on the menu bar
+  $tantalusDialog.parent().find(".ui-dialog-titlebar-close").hide();
+
   // We disable the button at the start
   $('#tantalus-submit').button('disable');
 
+  // Set the menu to be jQuery mostly so it gets styled with the stylesheet
   let $tantalusMenu = $('#tantalus-menu');
   $tantalusMenu.selectmenu();
-
-
-
-  // Get rid of the 'x' button on the menu bar
-  $tantalusDialog.parent().find(".ui-dialog-titlebar-close").hide();
-}
+  }
