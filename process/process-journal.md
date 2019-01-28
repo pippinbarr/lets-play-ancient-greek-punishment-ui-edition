@@ -167,3 +167,18 @@ Something that's apparent from this progress is a kind of funny relationship bet
 On the other hand, there the usability at the level of the punishment - a usable punishment, where the objective is specifically to make sure the interface is efficient, memorable, etc. with regard to being punished. In particular, this means avoiding any circumstances where the user might get out of the punishment through some clever use of UI. On Twitter people suggested things like using the tab key to select a value instead of the mouse, or dragging the slider to the top and then hitting enter to submit so it can't reset. Specifically removing those possibilities is an important part of the usability of this experience.
 
 In a sense a standard user-interface is a really perfect representation of those ancient punishment myths - it mirrors them very well. You have the need to perform an ostensibly simple task (in many cases at least - run to a flag, pick an apple, push a stone), but the circumstances/interface won't allow you to do so. In a way I find Danaids the most interface-y of the different punishments because it's so clear (I guess Tantalus is too) - you can see the holes in the bathtub from the beginning, so it's a clear piece of interface design that signals to you everything you need to know about your punishment. Even as you're compelled to carry out the task anyway (by the gods or by the interface's refusal to be dismissed [unless you exit everything of course]).
+
+---
+
+# On submission (Monday, 28 January 2019, 10:21AM)
+
+A quick note about submission since I see I flagged it in today's to-do list. I noticed this morning while working on Danaids and Tantalus that
+
+- Danaids has no submit button
+- Tantalus's submit button is never active
+
+Not necessarily bad, but there's something here that needs thought. Part of the magic of the Sisyphus app is that there is that moment where the submission button is active and you "could" click on it. It's part of the comedy/realism around that sense of a task that seems like it could be completed only to find at the last moment it can't.
+
+Tantalus's button never being active is maybe not the worst thing - but I think it's good that it's there at least, so there's some implication of a "reasonable" task made impossible by circumstances. In the case of Tantalus I suppose that "moment of possibility" is when you go to the dropdown menu, that's when you think/feel that this may work out, only to see that your options are greyed out at there's nothing you can do about it.
+
+Danaids is problematic right now because there's absolutely no implication anything will ever be completed and ended. Right now it's just a file operation which isn't something you "submit" and nor is it something that dismisses its own window. This is part of the problem with using a UI representation outside the world of control panel/settings kinds of dialogs. It has a very different temporal idea? So, it's perhaps yet another flaw. Urgh.
