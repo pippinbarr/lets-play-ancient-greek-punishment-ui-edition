@@ -127,3 +127,43 @@ Always worth thinking about mobile right? In an ideal world I'd like things to w
 - Danaids dragging - sure...? Vertical drag perhaps, but apart from that?
 - Zeno menus - argh, maybe maybe not, maybe if it's only vertical scroll within the dialog of the app?
 - Prometheus - multiple dialogs simultaneously seems like a bust, but even if you only have one peck at a time I think it's probably alright, it's just about presence and reaction not about being overwhelmed by multiple inputs?
+
+---
+
+# Notes on Sisyphus, Danaids, and Tantalus; Usability and Punishment (Monday, 28 January 2019, 7:42AM)
+
+__Sisyphus__
+
+Created Sisyphus yesterday (Sunday) in a quick burst - the beauty of having extremely simple, well-defined ideas for what it is you're trying to achieve. Created this gif of it, which conveys the whole thing nicely:
+
+![](images/it-is-as-if-sisyphus.gif)
+
+Very validating to post that on Twitter and have it up to over 1000 likes in less than a day. I mean, not that that's the objective here, but after a pretty tough spell of making stuff that hasn't really captured people's minds quite as much (and yes I'm just complaining) it feels good to have something accessibly interesting to people. Very easy to imagine nobody giving a shit about the game proper, but at least the idea appeals.
+
+So Sisyphus works really well, it's effectively done already, no obvious need to do more than confirm it'll work out okay on mobile and any other full-game level tweaks to things.
+
+__Danaids__
+
+Built a version this morning based on the premise of dragging a file to a folder and having it revert. Obviously very easy to implement but having implemented I'm not quite blown away. I think it's a _fair_ representation but
+
+- It does feel very similar to Sisyphus
+- It perhaps doesn't quite give you the right idea about the water vanishing, since you just get it back - in the myth its not like they were recycling the same water each time, they have to go and get new water
+- It feels like it's on the edge of breaking the interface level consistency because all the others are using standard UI elements which implies these things are little dialogs/control-panels, and yet Danaids is kind of pretending to be a file browser window
+
+So those are all problems that, together, make me less than certain about it as a result. It's fine and it works okay, but it's certainly not at the level of the others?
+
+Looking at the available UI elements isn't inspiring much either. The progress bar is the most obvious representation of water filling a container, so one could imagine using that more directly? "Fill the water progress bar"? And then figure out an interaction that you use for that, with it just sinking bank down. Even just a button? Though what kind of interface involves that? There's also the classic Windows file copying animation that could be worth a thought?
+
+In that version perhaps it's drag and drop still (with its related problems) but it launches a new dialog with the copying process and a progress bar, and that just goes on perpetually because the progress bar keeps slipping back? That would at least feel like a more coherent representation, but doesn't dodge the problem of swapping to a file-browser model of one of these dialogs? It's not the end of the world but I don't love it... might at least save that version.
+
+__Tantalus__
+
+This one just worked out well like Sisyphus - by being incredibly blunt and simple. A dropdown menu where you can't select the things you want to select, a pretty perfect analogy to Tantalus's situation - he can see what he wants/needs, but he can't reach/access it. And scene.
+
+__Usability and Punishment__
+
+Something that's apparent from this progress is a kind of funny relationship between the ideas in these punishment myths and ideas around usability. As I wrote in commit [5cf58cd](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-it-is-as-if-edition/commit/5cf58cd47e5293007334cbce71c47dc53014a69c), there's a sense in which the punishment is a matter of usability in both directions: if the interfaces were usable/accessible, then you'd be able to complete them because they wouldn't commit horrific usability gaffes like having no selectable options or (more bizarrely) having a slider that resets itself.
+
+On the other hand, there the usability at the level of the punishment - a usable punishment, where the objective is specifically to make sure the interface is efficient, memorable, etc. with regard to being punished. In particular, this means avoiding any circumstances where the user might get out of the punishment through some clever use of UI. On Twitter people suggested things like using the tab key to select a value instead of the mouse, or dragging the slider to the top and then hitting enter to submit so it can't reset. Specifically removing those possibilities is an important part of the usability of this experience.
+
+In a sense a standard user-interface is a really perfect representation of those ancient punishment myths - it mirrors them very well. You have the need to perform an ostensibly simple task (in many cases at least - run to a flag, pick an apple, push a stone), but the circumstances/interface won't allow you to do so. In a way I find Danaids the most interface-y of the different punishments because it's so clear (I guess Tantalus is too) - you can see the holes in the bathtub from the beginning, so it's a clear piece of interface design that signals to you everything you need to know about your punishment. Even as you're compelled to carry out the task anyway (by the gods or by the interface's refusal to be dismissed [unless you exit everything of course]).
