@@ -11,18 +11,21 @@
 
 # Danaids
 
-- Dialog box with a file and a folder
-- Set the file to revert when you drag it anywhere
-- Have the folder highlight to at least show you're "succeeding in targeting it"
-- Icon on the desktop
-- Should these things have an initial instruction in a dialog and thereafter none except for a "Help" button?
-- Or even no explanation at all so you have to get Help? (May be too obtuse?)
+- ~~Dialog box with a file and a folder~~
+- ~~Set the file to revert when you drag it anywhere~~
+- ~~Icon on the desktop~~
+- ~~__NO, THE INSTRUCTION IS ALWAYS SO SIMPLE THAT IT CAN REMAIN PRESENT__ Should these things have an initial instruction in a dialog and thereafter none except for a "Help" button?~~
+- ~~__NO, THE POINT ISN'T TO CONTROVERT THE BASICS OF USABILITY AND ACCESSIBILITY__ Or even no explanation at all so you have to get Help? (May be too obtuse?)~~
+
+- Have the folder highlight to at least show you're "succeeding in targeting it"?
+- Consider how this one might be a touch underdone right now
 
 # Tantalus
 
-- Dialog box with a drop down with both options greyed out
-- Submit button that won't work if you haven't selected anything (maybe an error message?)
-- Also consider trying: checkboxes, radio buttons, disabled buttons at the bottom? All possible. Maybe make all of them launch at once as a way to just test which feels best?
+- ~~Dialog box with a drop down with both options greyed out~~
+- ~~Submit button that won't work if you haven't selected anything (maybe an error message?)~~
+- ~~__THE SELECT MENU IS PRETTY PERFECT__ Also consider trying: checkboxes, radio buttons, disabled buttons at the bottom? All possible. Maybe make all of them launch at once as a way to just test which feels best?~~
+- ~~Icon etc. for launching~~
 
 # Zeno
 
