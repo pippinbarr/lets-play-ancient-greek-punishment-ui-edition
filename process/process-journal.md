@@ -182,3 +182,22 @@ Not necessarily bad, but there's something here that needs thought. Part of the 
 Tantalus's button never being active is maybe not the worst thing - but I think it's good that it's there at least, so there's some implication of a "reasonable" task made impossible by circumstances. In the case of Tantalus I suppose that "moment of possibility" is when you go to the dropdown menu, that's when you think/feel that this may work out, only to see that your options are greyed out at there's nothing you can do about it.
 
 Danaids is problematic right now because there's absolutely no implication anything will ever be completed and ended. Right now it's just a file operation which isn't something you "submit" and nor is it something that dismisses its own window. This is part of the problem with using a UI representation outside the world of control panel/settings kinds of dialogs. It has a very different temporal idea? So, it's perhaps yet another flaw. Urgh.
+
+---
+
+# Blog post: New project: Let's Play: Ancient Greek Punishment: UI Edition (Thursday, 31 January 2019, 6:47AM)
+
+http://pippinbarr.com/words/2019/01/30/new-project-lets-play-ancient-greek-punishment-ui-edition.html
+(Published Wednesday, 30 January 2019)
+
+One of my plans for this year is to work on smaller projects that are easy for me to understand and visualise how to accomplish. Last year I "lost my way" a little bit with game-making because I had a very fractured attention span. I also tried to be a bit too "serious" with a lot of my projects, so another aspect of this year is working chiefly on things that I find inherently amusing.
+
+In keeping with this, I recently released [Let's Play: Ancient Greek Punishment: Inversion Edition](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-inversion-edition/). It's my fifth edition in this series of games, all of which create and recreate the same Greek myths as videogames in different ways. At this point we've got the original "authentic" punishments, the art edition, the CPU-only edition, the "limited" edition, and now the inversion edition. I like working on these projects because they let me think and rethink the same constrained set of ideas from different vantage points. If nothing else it feels like it stretches my creative/design thinking not unlike games like [PONGS](http://www.pippinbarr.com/games/pongs/Pongs.html) and [SNAKISMS](https://pippinbarr.github.io/SNAKISMS/) did, but over a series of separate games instead of multi-packs of minigames.
+
+Even before I released the Inversion Edition I got straight to work on a new edition which I'm now tentatively calling _Let's Play: Ancient Greek Punishment: UI Edition_. (I had been calling it the _It is as if Edition_, but it's a bit awkward.) In this version I'm recreating the same suite of five punishment myths, but using traditional user-interface elements (via [jQuery UI](https://www.jqueryui.com)) instead of sprite animations etc. Clearly this is a major aesthetic change, but I like just how much the spirit is maintained even with these very distinct interactions. So, for example, Sisyphus takes place with a slider:
+
+![]({{site.assets}}/2019/01/30/sisyphus-ui.gif)
+
+Same basic experience of a task that can never be completed, but expressed in the language of UI design instead of retro pixel-art of the "literal" myths themselves. I think there's a lot to be learned here for me about expressing ideas in this new way, and I'm enjoying (and struggling with!) the process of working out how to translate each myth in a way that feels true both to the original myth and to the spirit of the series of games as I see it.
+
+Assuming I can get my head back into writing stuff here, more will follow. Nice to see you again.
