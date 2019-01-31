@@ -30,7 +30,7 @@ $(document).ready(function () {
   setupPrometheus();
   setupZeno();
 
-  // $('#zeno-dialog').dialog('open');
+  $('#danaids-dialog').dialog('open');
 
 });
 
@@ -154,30 +154,41 @@ function setupDanaids() {
   // Create the dialog to house the "app"
   $danaidsDialog.dialog({
     closeOnEscape: false,
-    autoOpen: false
+    autoOpen: false,
+    buttons: [
+      {
+        id: "danaids-submit",
+        text: "Submit",
+        click: function () {
+          console.log("This should not happen.");
+        }
+      }
+    ]
   });
+  $('#danaids-submit').button('disable');
+
   // Get rid of the 'x' button on the menu bar
   $danaidsDialog.parent().find(".ui-dialog-titlebar-close").hide();
 
-  // Make the water icon draggable and tell it to revert if dragged to the folder
-  // That's literally the punishment moment.
-  let $waterIcon = $('#water-icon');
-  $waterIcon.draggable({
-    revert: 'valid'
-  });
-  // Center it
-  $waterIcon.css('margin','0 auto');
+  $('.radio').checkboxradio();
+  $('#danaids-radios').controlgroup();
 
-  // Make the folder icon droppable  (so the drag recognizes it) and give it a
-  // highlight when the water is over it
-  let $folderIcon = $('#folder-icon');
-  $folderIcon.droppable({
-    classes: {
-      "ui-droppable-hover": "ui-state-hover"
-    }
+  $('#radio-full').on('click',function() {
+    $('#danaids-submit').button('enable');
   });
-  // Center it
-  $folderIcon.css('margin','0 auto');
+  $('#radio-empty').on('click',function() {
+    $('#danaids-submit').button('disable');
+  });
+  $('#danaids-radios').on('mouseleave',function() {
+    $('#danaids-submit').button('disable');
+    $('#radio-empty').trigger('click');
+  });
+
+  // I'm triggering  this click on empty because I don't understand why but
+  // without  it it displays a horrible little ^ icon in the radio button if
+  // I let it default to checked from the beginning?
+  $('#radio-empty').trigger('click');
+
 }
 
 // Set up the Tantalus app

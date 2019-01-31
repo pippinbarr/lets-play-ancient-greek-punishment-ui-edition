@@ -78,16 +78,14 @@
   <!-- Danaids -->
 
   <div id="danaids-dialog" title="Danaids">
-    <div class="instruction">Drag "water.png" to the "Bath" folder.</div>
-    <div id="water-icon" class="icon">
-      <img src="assets/images/water.png">
-      <div class="icon-label">water.png</div>
-    </div>
-
-    <div id="folder-icon" class="icon">
-      <img src="assets/images/folder.png">
-      <div class="icon-label">Bath</div>
-    </div>
+    <div class="instruction">Fill the bath with water.</div>
+    <fieldset id="danaids-radios">
+    <legend>Select a bath state: </legend>
+    <label for="radio-empty">Empty</label>
+    <input class="radio" type="radio" name="radio-danaids" id="radio-empty">
+    <label for="radio-full">Full</label>
+    <input class="radio" type="radio" name="radio-danaids" id="radio-full">
+  </fieldset>
   </div>
 
   <!-- Tantalus -->
