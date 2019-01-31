@@ -93,12 +93,24 @@
   <!-- Tantalus -->
 
   <div id="tantalus-dialog" title="Tantalus">
-    <div class="instruction">Select a food or drink:</div>
     <select name="nourishment" id="tantalus-menu">
-      <option selected>None</option>
+      <option disabled>Select a food or drink</option>
       <option disabled>Apple</option>
       <option disabled>Water</option>
     </select>
+  </div>
+
+  <div id="prometheus-dialog" title="Prometheus">
+    <div class="instruction">
+      Protect your liver.
+    </div>
+    <div id="liver-progress"></div>
+  </div>
+
+  <div id="peck-dialog" title="Alert: Eagle">
+    <div class="instruction">
+      Your liver will lose 10% of its value in <span id="peck-time">n</span> seconds.
+    </div>
   </div>
 
 
