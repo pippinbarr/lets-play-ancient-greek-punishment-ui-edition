@@ -32,6 +32,11 @@
   <script src="js/libraries/howler.core.min.js"></script>
 
   <!-- Include the script file -->
+  <script src="js/danaids.js"></script>
+  <script src="js/prometheus.js"></script>
+  <script src="js/zeno.js"></script>
+  <script src="js/sisyphus.js"></script>
+  <script src="js/tantalus.js"></script>
   <script src="js/script.js"></script>
 
 </head>
@@ -113,16 +118,27 @@
     </div>
   </div>
 
-  <!-- Danaids -->
+  <!-- Zeno -->
 
   <div id="zeno-dialog" title="Zeno">
     <div class="instruction">
-      Step <span id="zeno-step">1</span> of 2.
+      <span id="zeno-step-text">
+        <h4>Step <span id="zeno-step">1</span> of 2.</h4>
+        <p>
+          Take the next step.
+        </p>
+      </span>
+      <span id="zeno-welcome-text">
+        <h3>Welcome to the Zeno Wizard</h3>
+        <p>
+          This wizard will help you take the steps necessary to reach your destination.
+        </p>
+      </span>
     </div>
   </div>
 
   <!-- Stat tracking -->
-  
+
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

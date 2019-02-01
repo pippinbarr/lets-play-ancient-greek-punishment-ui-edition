@@ -40,9 +40,9 @@
 - ~~Look into recursion via dialog boxes - an endless process - oh shit, like a series of steps! (Step 1 of 2, Step 1.5 of 2, Step 1.75 of 2!!!! Fuuuuuck, that's pretty good. Much easier to represent man.)~~
 - ~~Implement "wizard version" with steps~~
 - ~~__NOT THAT, BUT A WELCOME SCREEN__ Text generation (or something) for each step? It's a bit spare?~~
+- ~~Add a welcome screen as the first step (step 0) that gives context to the rest, and the rest of the steps can be as they are I think~~
 
 - Look at restrictions on the precision of the float to make sure behaviour works if people really go for it
-- Add a welcome screen as the first step (step 0) that gives context to the rest, and the rest of the steps can be as they are I think
 - Sound
 
 # Prometheus
