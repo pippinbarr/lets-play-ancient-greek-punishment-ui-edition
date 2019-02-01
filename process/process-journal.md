@@ -201,3 +201,58 @@ Even before I released the Inversion Edition I got straight to work on a new edi
 Same basic experience of a task that can never be completed, but expressed in the language of UI design instead of retro pixel-art of the "literal" myths themselves. I think there's a lot to be learned here for me about expressing ideas in this new way, and I'm enjoying (and struggling with!) the process of working out how to translate each myth in a way that feels true both to the original myth and to the spirit of the series of games as I see it.
 
 Assuming I can get my head back into writing stuff here, more will follow. Nice to see you again.
+
+---
+
+# Sound, the spareness of Zeno's steps, designing for mobile (Friday, 1 February 2019, 6:50AM)
+
+Time to give some thought to what remains and to make sure I understand what's needed, as well as to poke around at some solutions.
+
+__Sound__
+
+It feels like the experience will be improved with sound, but I'm unclear on how much is needed. There's one version that's restrained to standard sounds like a dialog appearing, and another more slapsticky version where the various failures could make sounds (e.g. a sliding sound for the slider dropping back) or a button activating could make a sound (a nice ding or whatever). Some of the dialogs are basically completely non-interactive (e.g. Tantalus) and would make no sound?
+
+I think it could be funny to have the slapstick level of sounds, but I'm not totally clear on how much in the spirit it is? Is this thing more about the nature of UI and being accurate to UI (while managing to retell ancient Greek myths) or is it about the comedy of the experience? It's a kind of authenticity thing?
+
+Guess what? I should probably try both approaches. Default dings, and then throw in some of the others and see if it's an improvement or a bit much.
+
+__Zeno's steps__
+
+Right now Zeno works in the sense that you can take "infinite" steps toward your target, but it doesn't have any real content just the step itself. I've thought about whether that's actually funny and appropriate - each step just literally being a "step" along the way, in and of itself useless/meaningless except advancing you toward a goal, and of course the use of "step" in two senses... but just visually it may leave something to be desired?
+
+I've thought about having the user/player select which foot to take the step with, but that seems most appropriate for a radio button and I feel like I've "used" that already in Tantalus and can't reuse it. That's a very, very arbitrary constraint, but part of the idea here is to vary which elements are used to represent the ideas - I don't know if that's a stupid attempt to be a virtuoso or if it kind of makes sense to the project.
+
+Similarly thought of a little progress bar that just loads and then you can take the next step, but that seems really artificial and unnecessary?
+
+And another option would be to have some kind of text appear (generated?) that continuously assures you you're almost done etc., as you do see in these kinds of interfaces. "Just a couple more things" "Almost there" "Just about finished" etc. But then that's pretty weird is there aren't actually any "things" to be done...
+
+I should probably at [Windows wizards](https://www.google.ca/search?tbm=isch&q=windows+wizard) and [Zeno's paradox](https://en.wikipedia.org/wiki/Zeno%27s_paradoxes) to see if anything jumps out...
+
+- A "welcome" message is fairly common and can set context, that might be worth having at step 1? Or even before it?
+- A lot of radio buttons and checkboxes involved in a bunch of them
+- I guess a checkbox isn't the worst thing? Maybe you can just agree to each step? Or possible a range of options each time? They could be totally optional? Generated?
+- I should be cautious about having _too much_ stuff in this one? Don't want to overcompensate and end up with tons of extraneous things - part of this project is about a kind of austerity of interface? It's okay if it's repetitive...
+
+It's not impossible that with a Welcome stage the subsequent steps just don't need anything? At that point I think the joke can land a little better and the starkness may actually work in its favour... that each step is just a step. The Welcome screen can (hopefully?) kind of hint at that double meaning?
+
+__Mobile__
+
+Ugh. The least fun element of all. I suppoooooooooose I should care about this right? I have absolutely no real vision of how much traffic to my site comes from mobile. Maybe I should find out? Shit, it's not totally insignificant. 85,000 hits on my github for mobile devices in the last two years. (Compared to 200,000 for desktop.) Shit. Fine.
+
+Okay well part of this is just "get the UIs working and see what happens. Let me see how it behaves right now...
+
+Well. Impressively Danaids which is showing up right now just works fine which is a little shocking. But I'll take it. Or rather, you can click things and they respond and you can drag the window around and so on.
+
+But a) the icons on the desktop don't work so you can't open them and b) rather more importantly, the games rely in some places on a "mouse out" (e.g. Danaids) that can't be checked with touch because it's effectively just clicks. Whoa. So what would be affected by this problem?
+
+- Danaids relies on mouse out of radio buttons to switch back to empty
+- Tantalus is fine
+- Prometheus is fine
+- Zeno is fine
+- Sisyphus... I don't know, but should be fine since it's listening for a mouse up?
+
+That being the case I suppose it's not impossible to reimagine Dnaids "enough" that it can work again? Maybe a two step process so you fill the bath and then do another thing, but then that causes the bath to empty, and so on? Hm.
+
+So that's the design versus affordance part of it, and then there's the appearance part of it. Tempting though it might be to just say "fuck it" and leave it along, I suspect that's bad karma. It seems like at least on smaller devices (phones) it would make sense for any given dialog to take up the whole screen modally so you don't have the sense of launching multiple elements (again this will require a reload to get back to the start then). That being the case there's CSS bullshit to consider in terms of it looking alright? Ideally just at a certain screen width it creates a dialog that's sized to the window width and blacks out everything behind it (or grays) so that you're just looking at that dialog?
+
+I'll have to experiment a touch. _It is as if you were making love_ should at least have some clues for getting this done. Not the end of the world.

@@ -39,9 +39,10 @@
 - ~~__NOT NEEDED BECAUSE THE WIZARD VERSION IS GREAT__ Look into recursive forms of the drop-down~~
 - ~~Look into recursion via dialog boxes - an endless process - oh shit, like a series of steps! (Step 1 of 2, Step 1.5 of 2, Step 1.75 of 2!!!! Fuuuuuck, that's pretty good. Much easier to represent man.)~~
 - ~~Implement "wizard version" with steps~~
+- ~~__NOT THAT, BUT A WELCOME SCREEN__ Text generation (or something) for each step? It's a bit spare?~~
 
 - Look at restrictions on the precision of the float to make sure behaviour works if people really go for it
-- Text generation (or something) for each step? It's a bit spare?
+- Add a welcome screen as the first step (step 0) that gives context to the rest, and the rest of the steps can be as they are I think
 - Sound
 
 # Prometheus
@@ -52,8 +53,13 @@
 
 - Language pass of course
 - Sound
-- Dialog positions?
+- Have each subsequent peck appear directly over the Prometheus dialog
 
 # Mobile
 
-- Mostly rely on the work done for Love and focusing on UI that is narrow. Limit it to one app at a time, possibly by faking a home screen instead of a desktop. This would mean needing to reload the page since you won't be able to exit any of these games. More thought probably required.
+- ~~Mostly rely on the work done for Love and focusing on UI that is narrow. Limit it to one app at a time, possibly by faking a home screen instead of a desktop. This would mean needing to reload the page since you won't be able to exit any of these games. More thought probably required.~~
+
+- Alter Danaids design to allow touch only input (e.g. eliminate need for mouseout)
+- For mobile change activation of icons to single touch (e.g. like an app, also because dblclick doesn't seem to translate to mobile)
+- Figure out how to have any given app take the full width of the screen for narrow screens (e.g. mobile)
+- Do I need to worry about landscape mode? I would rather not - let's see how hideous it is (can always pop up a message telling them to stop it)

@@ -30,7 +30,7 @@ $(document).ready(function () {
   setupPrometheus();
   setupZeno();
 
-  $('#danaids-dialog').dialog('open');
+  // $('#danaids-dialog').dialog('open');
 
 });
 
