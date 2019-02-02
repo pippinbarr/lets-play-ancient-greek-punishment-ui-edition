@@ -16,6 +16,7 @@ function setupZeno() {
   let steps = -1; // The number of steps taken (e.g. 0, 1, 2, 3, 4, ...) for the Sigma expression
   // (It starts at -1 because the first step is when n=0)
   let sigma = false; // Whether we're displaying steps as sigma expressions
+  let plainText = false; // Whether we're displaying steps as just language
 
   let $zenoDialog = $('#zeno-dialog');
 
@@ -34,13 +35,6 @@ function setupZeno() {
         $('#zeno-step-text').show();
         $('#zeno-welcome-text').hide();
       }
-
-      if (step === 0 || steps === -1) {
-        $('#zeno-previous').button('disable');
-      }
-      else {
-        $('#zeno-previous').button('enable');
-      }
     },
     buttons: [
       {
@@ -53,8 +47,11 @@ function setupZeno() {
           if (sigma) {
             setSigmaExpression(steps);
           }
-          else {
+          else if (!plainText){
             setNumberedStep(step);
+          }
+          else {
+            setTextStep(step);
           }
 
           setTimeout(function () {
@@ -68,16 +65,25 @@ function setupZeno() {
         click: function () {
           $(this).dialog('close');
           steps++;
-          step += (2 - step)/2;
-          if (!sigma && step >= 2) {
-            sigma = true;
+          if (steps === Number.MAX_SAFE_INTEGER) {
+            sigma = false;
+            plainText = true;
+          }
+          else {
+            step += (2 - step)/2;
+            if (!sigma && step >= 2) {
+              sigma = true;
+            }
           }
 
           if (sigma) {
             setSigmaExpression(steps);
           }
-          else {
+          else if (!plainText){
             setNumberedStep(step);
+          }
+          else {
+            setTextStep(step);
           }
 
           setTimeout(function () {
@@ -87,6 +93,8 @@ function setupZeno() {
       }
     ]
   });
+  $('#zeno-previous').button('disable');
+
 
   // Get rid of the 'x' button on the menu bar
   $zenoDialog.parent().find(".ui-dialog-titlebar-close").hide();
@@ -99,11 +107,37 @@ function setSigmaExpression(steps) {
 
   $('#zeno-sigma-step').show();
   $('#zeno-numbered-step').hide();
+  $('#zeno-text-step').hide();
 }
 
 function setNumberedStep(step) {
   $('#zeno-step').text(step);
 
   $('#zeno-sigma-step').hide();
+  $('#zeno-text-step').hide();
   $('#zeno-numbered-step').show();
 }
+
+function setTextStep(step) {
+  $('#zeno-text-step').text(textSteps[Math.floor(Math.random() * textSteps.length)]);
+
+  $('#zeno-sigma-step').hide();
+  $('#zeno-numbered-step').hide();
+  $('#zeno-text-step').show();
+}
+
+
+let textSteps = [
+  "Almost there!",
+  "Keep going!",
+  "Just a few more steps!",
+  "Don't give up!",
+  "The end is in sight!",
+  "You can do this!",
+  "You're doing great!",
+  "Keep stepping!",
+  "One foot after the next!",
+  "You've got this!",
+  "Don't stop!",
+  "Keep clicking \"Next\"!"
+];

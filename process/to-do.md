@@ -41,8 +41,10 @@
 - ~~Implement "wizard version" with steps~~
 - ~~__NOT THAT, BUT A WELCOME SCREEN__ Text generation (or something) for each step? It's a bit spare?~~
 - ~~Add a welcome screen as the first step (step 0) that gives context to the rest, and the rest of the steps can be as they are I think~~
+- ~~Look at restrictions on the precision of the float to make sure behaviour works if people really go for it~~
+- ~~Add sigma expressions for when they exceed precision~~
+- ~~Add textual expressions when they exceed maximum integer in the sigma expression!!!~~
 
-- Look at restrictions on the precision of the float to make sure behaviour works if people really go for it
 - Sound
 
 # Prometheus

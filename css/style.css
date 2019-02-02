@@ -48,37 +48,6 @@ body {
   margin: 0 auto;
   /* transform: rotateZ(-45deg); */
 }
-/*
-#zeno-sigma {
-    position: relative;
-    font-size: 2em;
-    display: inline-block;
-    line-height: .7em;
-    vertical-align: middle;
-}
-
-#zeno-sigma:before {
-    font-size: 0.3em;
-    display: block;
-    position absolute;
-    left: 0;
-    top: 0;
-    content: "x";
-    width: 5em;
-    text-align: left;
-}
-
-#zeno-step:after {
-    font-size: 12px;
-    display: block;
-    position absolute;
-    left: 0;
-    bottom: 0;
-    content: "k = 1";
-    width: 27px;
-    text-align: center;
-} */
-
 
 
 /* DIALOGS
