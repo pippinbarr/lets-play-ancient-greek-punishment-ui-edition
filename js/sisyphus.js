@@ -37,6 +37,11 @@ function setupSisyphus() {
         }
       }
     ],
+    position: {
+      my: "center",
+      at: getNewDialogPosition(),
+      of: window
+    },
     closeOnEscape: false,
     autoOpen: false
   });

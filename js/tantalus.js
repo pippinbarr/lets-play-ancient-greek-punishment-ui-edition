@@ -20,12 +20,18 @@ function setupTantalus() {
 
   let $tantalusDialog = $('#tantalus-dialog');
 
+
   // Create the dialog to house the "app"
   $tantalusDialog.dialog({
     closeOnEscape: false,
     resizable: false,
     autoOpen: false,
     draggable: !phone,
+    position: {
+      my: "center",
+      at: getNewDialogPosition(),
+      of: window
+    },
     // You can specify buttons as an array of objects to get finer-grained control
     // In this instance I want to assign an id for later reference
     buttons: [

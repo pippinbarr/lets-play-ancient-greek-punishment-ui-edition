@@ -57,3 +57,12 @@ function handleOrientation() {
     $('#orientation-message').hide();
   }
 }
+
+
+function getNewDialogPosition() {
+  let x = $(window).width()/3 + Math.random()*$(window).width()/3;
+  let y = $(window).height()/3 + Math.random()*$(window).height()/3;
+  let positionAt = (phone) ? 'center' : 'left+' + x + ' top+' + y;
+
+  return positionAt;
+}

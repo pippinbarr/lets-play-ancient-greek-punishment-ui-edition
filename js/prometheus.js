@@ -26,6 +26,11 @@ function setupPrometheus() {
     autoOpen: false,
     resizable: false,
     draggable: !phone,
+    position: {
+      my: "center",
+      at: getNewDialogPosition(),
+      of: window
+    },
     open: function () {
       setTimeout(function () {
         $peckDialog.dialog('open');

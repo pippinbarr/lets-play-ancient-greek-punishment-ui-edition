@@ -20,12 +20,18 @@ function setupDanaids() {
 
   let $danaidsDialog = $('#danaids-dialog');
 
+
   // Create the dialog to house the "app"
   $danaidsDialog.dialog({
     closeOnEscape: false,
     resizable: false,
     autoOpen: false,
     draggable: !phone,
+    position: {
+      my: "center",
+      at: getNewDialogPosition(),
+      of: window
+    },
     buttons: [
       {
         id: "danaids-submit",

@@ -28,7 +28,6 @@ function setupZeno() {
   let $zenoDialog = $('#zeno-dialog');
 
 
-
   // Create the dialog to house the "app"
   $zenoDialog.dialog({
     closeOnEscape: false,
@@ -38,7 +37,7 @@ function setupZeno() {
     draggable: !phone,
     position: {
       my: "center",
-      at: "center",
+      at: getNewDialogPosition(),
       of: window
     },
     // You can specify buttons as an array of objects to get finer-grained control
