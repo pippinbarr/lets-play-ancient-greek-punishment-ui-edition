@@ -17,6 +17,7 @@ function setupPrometheus() {
   $prometheusDialog.dialog({
     closeOnEscape: false,
     autoOpen: false,
+    resizable: false,
     open: function () {
       setTimeout(function () {
         $peckDialog.dialog('open');
@@ -42,6 +43,13 @@ function setupPrometheus() {
   $peckDialog.dialog({
     closeOnEscape: false,
     autoOpen: false,
+    draggable: false,
+    resizable: false,
+    position: {
+      my: "center",
+      at: "center",
+      of: $prometheusDialog
+    },
     open: function () {
       let peckTime = 5;
       $('#peck-time').text(peckTime);

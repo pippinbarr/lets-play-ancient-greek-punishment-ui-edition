@@ -16,6 +16,7 @@ function setupDanaids() {
   // Create the dialog to house the "app"
   $danaidsDialog.dialog({
     closeOnEscape: false,
+    resizable: false,
     autoOpen: false,
     buttons: [
       {

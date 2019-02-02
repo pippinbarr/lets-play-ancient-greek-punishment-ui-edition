@@ -23,6 +23,7 @@ function setupZeno() {
   // Create the dialog to house the "app"
   $zenoDialog.dialog({
     closeOnEscape: false,
+    resizable: false,
     autoOpen: false,
     // You can specify buttons as an array of objects to get finer-grained control
     // In this instance I want to assign an id for later reference

@@ -9,6 +9,7 @@ function setupSisyphus() {
 
   // Create the dialog to house the "app"
   $sisyphusDialog.dialog({
+    resizable: false,
     // You can specify buttons as an array of objects to get finer-grained control
     // In this instance I want to assign an id for later reference
     buttons: [

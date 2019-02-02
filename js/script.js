@@ -30,6 +30,6 @@ $(document).ready(function () {
   setupPrometheus();
   setupZeno();
 
-  $('#zeno-dialog').dialog('open');
+  // $('#zeno-dialog').dialog('open');
 
 });

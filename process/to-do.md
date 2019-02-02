@@ -52,10 +52,10 @@
 - ~~Get the basic liver progress bar in a dialog~~
 - ~~Peck dialog appears on top (maybe random location on screen for desktop?) and has a countdown timer for you to cancel it within (think about the language here as it's pretty awkward?)~~
 - ~~__IT DOES__ Keep thinking about whether this one really works~~
+- ~~Have each subsequent peck appear directly over the Prometheus dialog~~
 
 - Language pass of course
 - Sound
-- Have each subsequent peck appear directly over the Prometheus dialog
 
 # Mobile
 
