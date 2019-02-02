@@ -31,6 +31,9 @@
   <!-- Howler for audio -->
   <script src="js/libraries/howler.core.min.js"></script>
 
+  <!-- MathJax for mathematical notation -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
   <!-- Include the script file -->
   <script src="js/danaids.js"></script>
   <script src="js/prometheus.js"></script>
@@ -123,7 +126,8 @@
   <div id="zeno-dialog" title="Zeno">
     <div class="instruction">
       <span id="zeno-step-text">
-        <h4>Step <span id="zeno-step">1</span> of 2.</h4>
+        <h4 id="zeno-numbered-step">Step <span id="zeno-step">1</span> of 2.</h4>
+        <h4 id="zeno-sigma-step">Step <span id="zeno-sigma-expression"></span> of 2.</h4>
         <p>
           Take the next step.
         </p>
