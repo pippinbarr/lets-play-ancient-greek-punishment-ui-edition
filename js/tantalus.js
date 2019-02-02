@@ -6,15 +6,15 @@
 function setupTantalus() {
   // Set up  the icon
   let  $tantalusIcon = $('#tantalus-icon');
-  $tantalusIcon.draggable();
+  if (!touchBased) $tantalusIcon.draggable();
   $tantalusIcon.on('dblclick touchend',function() {
-    if (mobile) {
+    if (phone) {
       $('#app-background').fadeIn(1000,function () {
         $tantalusDialog.dialog('open');
       });
     }
     else {
-      $tantalusDialog.dialog('open');      
+      $tantalusDialog.dialog('open');
     }
   });
 
@@ -25,6 +25,7 @@ function setupTantalus() {
     closeOnEscape: false,
     resizable: false,
     autoOpen: false,
+    draggable: !phone,
     // You can specify buttons as an array of objects to get finer-grained control
     // In this instance I want to assign an id for later reference
     buttons: [
@@ -43,6 +44,10 @@ function setupTantalus() {
 
   // We disable the button at the start
   $('#tantalus-submit').button('disable');
+
+  if (phone) {
+    $tantalusDialog.dialog('option','width','90%');
+  }
 
   // Set the menu to be jQuery mostly so it gets styled with the stylesheet
   let $tantalusMenu = $('#tantalus-menu');

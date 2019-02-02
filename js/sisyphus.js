@@ -9,9 +9,9 @@ function setupSisyphus() {
 
   // Set up  the icon
   let $sisyphusIcon = $('#sisyphus-icon');
-  $sisyphusIcon.draggable();
+  if (!touchBased) $sisyphusIcon.draggable();
   $sisyphusIcon.on('dblclick touchend',function() {
-    if (mobile) {
+    if (phone) {
       $('#app-background').fadeIn(1000,function () {
         $sisyphusDialog.dialog('open');
       });
@@ -24,6 +24,7 @@ function setupSisyphus() {
   // Create the dialog to house the "app"
   $sisyphusDialog.dialog({
     resizable: false,
+    draggable: !phone,
     // You can specify buttons as an array of objects to get finer-grained control
     // In this instance I want to assign an id for later reference
     buttons: [
@@ -44,6 +45,10 @@ function setupSisyphus() {
 
   // We disable the button at the start (the slider will start at 0)
   $('#sisyphus-submit').button('disable');
+
+  if (phone) {
+    $sisyphusDialog.dialog('option','width','90%');
+  }
 
   // Store a reference to the slider for easy access
   let $sisyphusSlider = $('#sisyphus-slider');

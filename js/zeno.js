@@ -7,9 +7,9 @@
 function setupZeno() {
   // Set up  the icon
   let  $zenoIcon = $('#zeno-icon');
-  $zenoIcon.draggable();
+  if (!touchBased) $zenoIcon.draggable();
   $zenoIcon.on('dblclick touchend',function() {
-    if (mobile) {
+    if (phone) {
       $('#app-background').fadeIn(1000,function () {
         $zenoDialog.dialog('open');
       });
@@ -35,10 +35,11 @@ function setupZeno() {
     resizable: false,
     autoOpen: false,
     collision: 'none',
+    draggable: !phone,
     position: {
       my: "center",
       at: "center",
-      of: $('#wrapper')
+      of: window
     },
     // You can specify buttons as an array of objects to get finer-grained control
     // In this instance I want to assign an id for later reference
@@ -110,7 +111,7 @@ function setupZeno() {
     ]
   });
 
-  if (mobile) {
+  if (phone) {
     $zenoDialog.dialog('option','width','90%');
   }
 

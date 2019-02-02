@@ -1,3 +1,7 @@
+html {
+  height: 100vh;
+  width: 100vw;
+}
 
 body {
   background-color: #aaa;
@@ -7,8 +11,8 @@ body {
   padding: 0;
   overflow: hidden;
   font-family: "MS Sans Serif", Arial, sans-serif;
-  /* height: 100vh; */
-  /* width: 100vw; */
+  height: 100vh;
+  width: 100vw;
 }
 
 .dialog {
@@ -18,8 +22,8 @@ body {
 
 #wrapper {
   position: relative;
-  /* height: 99vh; */
-  /* width: 99vw; */
+  height: 100vh;
+  width: 100vw;
   /* overflow: hidden; */
   /* display: block; */
 }
@@ -50,6 +54,10 @@ body {
   margin: 0 auto;
   display: none;
   /* pointer-events: none; */
+}
+
+#zeno-step-text {
+  display: none;
 }
 
 .icon {

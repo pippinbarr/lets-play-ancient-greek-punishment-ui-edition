@@ -6,9 +6,9 @@
 function setupPrometheus() {
   // Set up  the icon
   let  $prometheusIcon = $('#prometheus-icon');
-  $prometheusIcon.draggable();
+  if (!touchBased) $prometheusIcon.draggable();
   $prometheusIcon.on('dblclick touchend',function() {
-    if (mobile) {
+    if (phone) {
       $('#app-background').fadeIn(1000,function () {
         $prometheusDialog.dialog('open');
       });
@@ -25,6 +25,7 @@ function setupPrometheus() {
     closeOnEscape: false,
     autoOpen: false,
     resizable: false,
+    draggable: !phone,
     open: function () {
       setTimeout(function () {
         $peckDialog.dialog('open');
@@ -33,7 +34,9 @@ function setupPrometheus() {
   });
   // Get rid of the 'x' button on the menu bar
   $prometheusDialog.parent().find(".ui-dialog-titlebar-close").hide();
-
+  if (phone) {
+    $prometheusDialog.dialog('option','width','90%');
+  }
   // We disable the button at the start
   // $('#prometheus-submit').button('disable');
 
@@ -110,4 +113,7 @@ function setupPrometheus() {
   });
   // Get rid of the 'x' button on the menu bar
   $peckDialog.parent().find(".ui-dialog-titlebar-close").hide();
+  if (phone) {
+    $peckDialog.dialog('option','width','90%');
+  }
 }

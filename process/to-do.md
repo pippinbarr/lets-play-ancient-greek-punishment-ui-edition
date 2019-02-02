@@ -64,10 +64,11 @@
 - ~~__ADDED A MESSAGE SHOULD WORK__ Do I need to worry about landscape mode? I would rather not - let's see how hideous it is (can always pop up a message telling them to stop it)~~
 - ~~TRIGGERING ON BOTH DBLCLICK AND TOUCHEND SEEMS TO WORK WELL ENOUGH HERE__ Need to distinguish "touch" versus "click" for icon launch (e.g. ipad is not "mobile" but still requires single click not dbl)~~
 - ~~The big question of whether on mobile we're just modally ONLY doing one app per (e.g. really live up to the app thing), or just let people run multiple punishments even on a little phone and screw the problems of screen realestate?~~
+- ~~Disable draggable on mobile/touch icons? (It's a bit gross when they launch the app at the end of a drag)~~
 
 - Alter Danaids design to allow touch only input (e.g. eliminate need for mouseout)
 - Randomly position dialogs on non-phone devices for sexier aesthetics? Cluster in the center but position a bit more haphazardly?
 
 # Bugs?
 
--  Why the fuck does the first Zeno dialog always appear slightly higher than the subsequent ones? Eh?
+-  ~~__BECAUSE I WAS DISPLAYING MULTIPLE SPANS AND HIDING ONLY AFTER CREATING THE DIALOG WHICH CHANGED ITS POSITION CALCULATION__ Why the fuck does the first Zeno dialog always appear slightly higher than the subsequent ones? Eh?~~

@@ -21,12 +21,17 @@ https://github.com/simeydotme/jQuery-ui-Slider-Pips
 
 ******************************************************/
 
-let mobile = false;
+let phone = false;
+let touchBased = false;
 
 $(document).ready(function () {
 
-  mobile = (window.screen.width < 768) && (window.screen.width < window.screen.height);
-  
+  phone = (window.screen.width < 768) && (window.screen.width < window.screen.height);
+  touchBased = (('ontouchstart' in window)
+  || (navigator.MaxTouchPoints > 0)
+  || (navigator.msMaxTouchPoints > 0));
+  console.log(touchBased);
+
   handleOrientation();
 
 
@@ -45,7 +50,7 @@ $(document).ready(function () {
 });
 
 function handleOrientation() {
-  if (mobile && $(window).width() > $(window).height()) {
+  if (phone && $(window).width() > $(window).height()) {
     $('#orientation-message').show();
   }
   else {

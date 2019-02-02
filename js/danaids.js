@@ -6,9 +6,9 @@
 function setupDanaids() {
   // Set up  the icon
   let  $danaidsIcon = $('#danaids-icon');
-  $danaidsIcon.draggable();
+  if (!touchBased) $danaidsIcon.draggable();
   $danaidsIcon.on('dblclick touchend',function() {
-    if (mobile) {
+    if (phone) {
       $('#app-background').fadeIn(1000,function () {
         $danaidsDialog.dialog('open');
       });
@@ -25,6 +25,7 @@ function setupDanaids() {
     closeOnEscape: false,
     resizable: false,
     autoOpen: false,
+    draggable: !phone,
     buttons: [
       {
         id: "danaids-submit",
@@ -39,6 +40,10 @@ function setupDanaids() {
 
   // Get rid of the 'x' button on the menu bar
   $danaidsDialog.parent().find(".ui-dialog-titlebar-close").hide();
+
+  if (phone) {
+    $danaidsDialog.dialog('option','width','90%');
+  }
 
   $('.radio').checkboxradio();
   $('#danaids-radios').controlgroup();
