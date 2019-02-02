@@ -40,7 +40,10 @@ function setupDanaids() {
           console.log("This should not happen.");
         }
       }
-    ]
+    ],
+    open: function () {
+      $(':focusable').blur();
+    }
   });
   $('#danaids-submit').button('disable');
 
@@ -51,23 +54,52 @@ function setupDanaids() {
     $danaidsDialog.dialog('option','width','90%');
   }
 
-  $('.radio').checkboxradio();
-  $('#danaids-radios').controlgroup();
+  $('#danaids-radios').controlgroup({
+    direction: "vertical"
+  });
 
   $('#radio-full').on('click',function() {
     $('#danaids-submit').button('enable');
+    $(':focusable').blur();
   });
-  $('#radio-empty').on('click',function() {
+  $('#radio-full').on('click',function() {
+    setTimeout(function () {
+      $('#radio-half-full').trigger('click');
+      $('#danaids-submit').button('disable');
+      $(':focusable').blur();
+
+      setTimeout(function () {
+        $('#radio-empty').trigger('click');
+        $(':focusable').blur();
+
+      },100);
+    },100);
+  });
+  $('#radio-half-full').on('click',function() {
     $('#danaids-submit').button('disable');
+    $(':focusable').blur();
+
+    setTimeout(function () {
+      $('#radio-empty').trigger('click');
+      $(':focusable').blur();
+
+    },100);
   });
-  $('#danaids-radios').on('mouseleave',function() {
+  $('#radio-empty #radio-half-full').on('click',function() {
     $('#danaids-submit').button('disable');
-    $('#radio-empty').trigger('click');
+    $(':focusable').blur();
+
   });
+  // $('#danaids-radios').on('mouseleave',function() {
+  //   $('#danaids-submit').button('disable');
+  //   $('#radio-empty').trigger('click');
+  // });
 
   // I'm triggering  this click on empty because I don't understand why but
   // without  it it displays a horrible little ^ icon in the radio button if
   // I let it default to checked from the beginning?
   $('#radio-empty').trigger('click');
+
+  $('.ui-button').blur();
 
 }

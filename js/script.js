@@ -45,7 +45,14 @@ $(document).ready(function () {
     handleOrientation();
   });
 
-  // $('#zeno-dialog').dialog('open');
+  // $('#danaids-dialog').dialog('open');
+
+  $(window).on('keypress keydown keyup',function(e) {
+    if (e.keyCode === 32 || e.keyCode === 9 || e.keyCode === 13 || (e.keyCode >= 37 && e.keyCode <= 40)) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  });
 
 });
 

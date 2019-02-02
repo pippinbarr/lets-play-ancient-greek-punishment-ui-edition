@@ -93,6 +93,8 @@
         <legend>Select a bath state: </legend>
         <label for="radio-empty">Empty</label>
         <input class="radio" type="radio" name="radio-danaids" id="radio-empty">
+        <label for="radio-half-full">Half-full</label>
+        <input class="radio" type="radio" name="radio-danaids" id="radio-half-full">
         <label for="radio-full">Full</label>
         <input class="radio" type="radio" name="radio-danaids" id="radio-full">
       </fieldset>
@@ -101,10 +103,10 @@
     <!-- Tantalus -->
 
     <div id="tantalus-dialog" class="dialog" title="Tantalus">
-      <select name="nourishment" id="tantalus-menu">
-        <option selected disabled>Select a food or drink:</option>
-        <option disabled>Apple</option>
-        <option disabled>Water</option>
+      <select name="nourishment" id="tantalus-menu" readonly>
+        <option selected disabled readonly>Select a food or drink:</option>
+        <option disabled readonly>Apple</option>
+        <option disabled readonly>Water</option>
       </select>
     </div>
 

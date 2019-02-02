@@ -66,10 +66,10 @@
 - ~~The big question of whether on mobile we're just modally ONLY doing one app per (e.g. really live up to the app thing), or just let people run multiple punishments even on a little phone and screw the problems of screen realestate?~~
 - ~~Disable draggable on mobile/touch icons? (It's a bit gross when they launch the app at the end of a drag)~~
 - ~~Randomly position dialogs on non-phone devices for sexier aesthetics? Cluster in the center but position a bit more haphazardly?~~
-
-- Alter Danaids design to allow touch only input (e.g. eliminate need for mouseout)
+- ~~Alter Danaids design to allow touch only input (e.g. eliminate need for mouseout)~~
 
 
 # Bugs?
 
 -  ~~__BECAUSE I WAS DISPLAYING MULTIPLE SPANS AND HIDING ONLY AFTER CREATING THE DIALOG WHICH CHANGED ITS POSITION CALCULATION__ Why the fuck does the first Zeno dialog always appear slightly higher than the subsequent ones? Eh?~~
+- ~~Get rid of keyboard input and focus as entirely as possible~~

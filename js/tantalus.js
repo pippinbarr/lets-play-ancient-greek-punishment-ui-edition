@@ -43,7 +43,7 @@ function setupTantalus() {
           console.log("This shouldn't be possible.");
         }
       }
-    ],
+    ]
   });
   // Get rid of the 'x' button on the menu bar
   $tantalusDialog.parent().find(".ui-dialog-titlebar-close").hide();
@@ -57,5 +57,11 @@ function setupTantalus() {
 
   // Set the menu to be jQuery mostly so it gets styled with the stylesheet
   let $tantalusMenu = $('#tantalus-menu');
-  $tantalusMenu.selectmenu();
+  $tantalusMenu.selectmenu({
+    open: function () {
+      $('.ui-button').bind('keydown', function (e) {
+        e.preventDefault();
+      });
+    },
+  });
 }
