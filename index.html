@@ -47,99 +47,111 @@
 <!-- Icons -->
 
 <body>
-  <div id="sisyphus-icon" class="icon">
-    <img src="assets/images/sisyphus-icon.png">
-    <div class="icon-label">Sisyphus</div>
-  </div>
+  <div id="wrapper">
 
-  <div id="danaids-icon" class="icon">
-    <img src="assets/images/danaids-icon.png">
-    <div class="icon-label">Danaids</div>
-  </div>
-
-  <div id="tantalus-icon" class="icon">
-    <img src="assets/images/tantalus-icon.png">
-    <div class="icon-label">Tantalus</div>
-  </div>
-
-  <div id="prometheus-icon" class="icon">
-    <img src="assets/images/prometheus-icon.png">
-    <div class="icon-label">Prometheus</div>
-  </div>
-
-  <div id="zeno-icon" class="icon">
-    <img src="assets/images/zeno-icon.png">
-    <div class="icon-label">Zeno</div>
-  </div>
-
-  <!-- Apps -->
-
-  <!-- Sisyphus -->
-
-  <div id="sisyphus-dialog" title="Sisyphus">
-    <div class="instruction">Set the slider to 10.</div>
-    <div id="sisyphus-slider-wrapper">
-      <div id="sisyphus-slider"></div>
+    <div id="sisyphus-icon" class="icon">
+      <img src="assets/images/sisyphus-icon.png">
+      <div class="icon-label">Sisyphus</div>
     </div>
-  </div>
 
-  <!-- Danaids -->
-
-  <div id="danaids-dialog" title="Danaids">
-    <div class="instruction">Fill the bath with water.</div>
-    <fieldset id="danaids-radios">
-    <legend>Select a bath state: </legend>
-    <label for="radio-empty">Empty</label>
-    <input class="radio" type="radio" name="radio-danaids" id="radio-empty">
-    <label for="radio-full">Full</label>
-    <input class="radio" type="radio" name="radio-danaids" id="radio-full">
-  </fieldset>
-  </div>
-
-  <!-- Tantalus -->
-
-  <div id="tantalus-dialog" title="Tantalus">
-    <select name="nourishment" id="tantalus-menu">
-      <option selected disabled>Select a food or drink:</option>
-      <option disabled>Apple</option>
-      <option disabled>Water</option>
-    </select>
-  </div>
-
-  <!-- Prometheus -->
-
-  <div id="prometheus-dialog" title="Prometheus">
-    <div class="instruction">
-      Protect your liver.
+    <div id="danaids-icon" class="icon">
+      <img src="assets/images/danaids-icon.png">
+      <div class="icon-label">Danaids</div>
     </div>
-    <div id="liver-progress"></div>
+
+    <div id="tantalus-icon" class="icon">
+      <img src="assets/images/tantalus-icon.png">
+      <div class="icon-label">Tantalus</div>
+    </div>
+
+    <div id="prometheus-icon" class="icon">
+      <img src="assets/images/prometheus-icon.png">
+      <div class="icon-label">Prometheus</div>
+    </div>
+
+    <div id="zeno-icon" class="icon">
+      <img src="assets/images/zeno-icon.png">
+      <div class="icon-label">Zeno</div>
+    </div>
+
+    <!-- Apps -->
+
+    <!-- Sisyphus -->
+
+    <div id="sisyphus-dialog" class="dialog" title="Sisyphus">
+      <div class="instruction">Set the slider to 10.</div>
+      <div id="sisyphus-slider-wrapper">
+        <div id="sisyphus-slider"></div>
+      </div>
+    </div>
+
+    <!-- Danaids -->
+
+    <div id="danaids-dialog" class="dialog" title="Danaids">
+      <div class="instruction">Fill the bath with water.</div>
+      <fieldset id="danaids-radios">
+        <legend>Select a bath state: </legend>
+        <label for="radio-empty">Empty</label>
+        <input class="radio" type="radio" name="radio-danaids" id="radio-empty">
+        <label for="radio-full">Full</label>
+        <input class="radio" type="radio" name="radio-danaids" id="radio-full">
+      </fieldset>
+    </div>
+
+    <!-- Tantalus -->
+
+    <div id="tantalus-dialog" class="dialog" title="Tantalus">
+      <select name="nourishment" id="tantalus-menu">
+        <option selected disabled>Select a food or drink:</option>
+        <option disabled>Apple</option>
+        <option disabled>Water</option>
+      </select>
+    </div>
+
+    <!-- Prometheus -->
+
+    <div id="prometheus-dialog" class="dialog" title="Prometheus">
+      <div class="instruction">
+        Protect your liver.
+      </div>
+      <div id="liver-progress"></div>
+    </div>
+
+    <div id="peck-dialog" class="dialog" title="Alert: Eagle">
+      <div class="instruction">
+        Your liver will lose 10% of its value in <span id="peck-time">n</span> seconds.
+      </div>
+    </div>
+
+    <!-- Zeno -->
+
+    <div id="zeno-dialog" class="dialog" title="Zeno">
+      <div class="instruction">
+        <span id="zeno-step-text">
+          <h4 id="zeno-numbered-step">Step <span id="zeno-step">1</span> of 2.</h4>
+          <h4 id="zeno-sigma-step">Step <span id="zeno-sigma-expression"></span> of 2.</h4>
+          <h4 id="zeno-text-step"></h4>
+          <p>
+            Take the next step.
+          </p>
+        </span>
+        <span id="zeno-welcome-text">
+          <h3>Welcome to the Zeno Wizard</h3>
+          <p>
+            This wizard will help you take the steps necessary to reach your destination.
+          </p>
+        </span>
+      </div>
+    </div>
+
   </div>
 
-  <div id="peck-dialog" title="Alert: Eagle">
-    <div class="instruction">
-      Your liver will lose 10% of its value in <span id="peck-time">n</span> seconds.
-    </div>
+  <div id="app-background">
   </div>
 
-  <!-- Zeno -->
-
-  <div id="zeno-dialog" title="Zeno">
-    <div class="instruction">
-      <span id="zeno-step-text">
-        <h4 id="zeno-numbered-step">Step <span id="zeno-step">1</span> of 2.</h4>
-        <h4 id="zeno-sigma-step">Step <span id="zeno-sigma-expression"></span> of 2.</h4>
-        <h4 id="zeno-text-step"></h4>
-        <p>
-          Take the next step.
-        </p>
-      </span>
-      <span id="zeno-welcome-text">
-        <h3>Welcome to the Zeno Wizard</h3>
-        <p>
-          This wizard will help you take the steps necessary to reach your destination.
-        </p>
-      </span>
-    </div>
+  <div id="orientation-message">
+    <br /><br />
+    Please play this game in portrait mode.
   </div>
 
   <!-- Stat tracking -->

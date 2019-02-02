@@ -8,8 +8,15 @@ function setupZeno() {
   // Set up  the icon
   let  $zenoIcon = $('#zeno-icon');
   $zenoIcon.draggable();
-  $zenoIcon.on('dblclick',function() {
-    $zenoDialog.dialog('open');
+  $zenoIcon.on('dblclick touchend',function() {
+    if (mobile) {
+      $('#app-background').fadeIn(1000,function () {
+        $zenoDialog.dialog('open');
+      });
+    }
+    else {
+      $zenoDialog.dialog('open');
+    }
   });
 
   let step = 0; // The current step number (e.g. 1, 1.5, 1.75, ...) for the float representation
@@ -20,11 +27,19 @@ function setupZeno() {
 
   let $zenoDialog = $('#zeno-dialog');
 
+
+
   // Create the dialog to house the "app"
   $zenoDialog.dialog({
     closeOnEscape: false,
     resizable: false,
     autoOpen: false,
+    collision: 'none',
+    position: {
+      my: "center",
+      at: "center",
+      of: $('#wrapper')
+    },
     // You can specify buttons as an array of objects to get finer-grained control
     // In this instance I want to assign an id for later reference
     open: function () {
@@ -42,7 +57,7 @@ function setupZeno() {
         id: "zeno-previous",
         text: "< Previous",
         click: function () {
-          $(this).dialog('close');
+          $zenoDialog.dialog('close');
           steps--;
           step -= (2 - step);
           if (sigma) {
@@ -64,7 +79,7 @@ function setupZeno() {
         id: "zeno-next",
         text: "Next >",
         click: function () {
-          $(this).dialog('close');
+          $zenoDialog.dialog('close');
           steps++;
           if (steps === Number.MAX_SAFE_INTEGER) {
             sigma = false;
@@ -94,6 +109,11 @@ function setupZeno() {
       }
     ]
   });
+
+  if (mobile) {
+    $zenoDialog.dialog('option','width','90%');
+  }
+
   $('#zeno-previous').button('disable');
 
 

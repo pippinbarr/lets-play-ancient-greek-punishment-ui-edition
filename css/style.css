@@ -4,14 +4,52 @@ body {
   user-select: none;
   word-wrap: break-word;
   margin: 0;
+  padding: 0;
   overflow: hidden;
   font-family: "MS Sans Serif", Arial, sans-serif;
+  /* height: 100vh; */
+  /* width: 100vw; */
+}
+
+.dialog {
+  display: none;
+  z-index: 75;
 }
 
 #wrapper {
   position: relative;
-  height: 100vh;
+  /* height: 99vh; */
+  /* width: 99vw; */
+  /* overflow: hidden; */
+  /* display: block; */
+}
+
+#orientation-message {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
+  height: 100vh;
+  background-color: #aaa;
+  z-index: 100;
+  margin: 0 auto;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  display: none;
+}
+
+#app-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #aaa;
+  z-index: 50;
+  margin: 0 auto;
+  display: none;
+  /* pointer-events: none; */
 }
 
 .icon {

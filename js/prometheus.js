@@ -7,8 +7,15 @@ function setupPrometheus() {
   // Set up  the icon
   let  $prometheusIcon = $('#prometheus-icon');
   $prometheusIcon.draggable();
-  $prometheusIcon.on('dblclick',function() {
-    $prometheusDialog.dialog('open');
+  $prometheusIcon.on('dblclick touchend',function() {
+    if (mobile) {
+      $('#app-background').fadeIn(1000,function () {
+        $prometheusDialog.dialog('open');
+      });
+    }
+    else {
+      $prometheusDialog.dialog('open');
+    }
   });
 
   let $prometheusDialog = $('#prometheus-dialog');

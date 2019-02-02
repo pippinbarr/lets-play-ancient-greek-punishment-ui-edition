@@ -7,6 +7,20 @@ function setupSisyphus() {
 
   let $sisyphusDialog = $('#sisyphus-dialog');
 
+  // Set up  the icon
+  let $sisyphusIcon = $('#sisyphus-icon');
+  $sisyphusIcon.draggable();
+  $sisyphusIcon.on('dblclick touchend',function() {
+    if (mobile) {
+      $('#app-background').fadeIn(1000,function () {
+        $sisyphusDialog.dialog('open');
+      });
+    }
+    else {
+      $sisyphusDialog.dialog('open');
+    }
+  });
+
   // Create the dialog to house the "app"
   $sisyphusDialog.dialog({
     resizable: false,
@@ -90,12 +104,5 @@ function setupSisyphus() {
     last: 'label',
     rest: 'label',
     labels: ['0','1','2','3','4','5','6','7','8','9','10'],
-  });
-
-  // Set up  the icon
-  let $sisyphusIcon = $('#sisyphus-icon');
-  $sisyphusIcon.draggable();
-  $sisyphusIcon.on('dblclick',function() {
-    $sisyphusDialog.dialog('open');
   });
 }

@@ -7,8 +7,15 @@ function setupTantalus() {
   // Set up  the icon
   let  $tantalusIcon = $('#tantalus-icon');
   $tantalusIcon.draggable();
-  $tantalusIcon.on('dblclick',function() {
-    $tantalusDialog.dialog('open');
+  $tantalusIcon.on('dblclick touchend',function() {
+    if (mobile) {
+      $('#app-background').fadeIn(1000,function () {
+        $tantalusDialog.dialog('open');
+      });
+    }
+    else {
+      $tantalusDialog.dialog('open');      
+    }
   });
 
   let $tantalusDialog = $('#tantalus-dialog');

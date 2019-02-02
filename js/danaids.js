@@ -7,8 +7,15 @@ function setupDanaids() {
   // Set up  the icon
   let  $danaidsIcon = $('#danaids-icon');
   $danaidsIcon.draggable();
-  $danaidsIcon.on('dblclick',function() {
-    $danaidsDialog.dialog('open');
+  $danaidsIcon.on('dblclick touchend',function() {
+    if (mobile) {
+      $('#app-background').fadeIn(1000,function () {
+        $danaidsDialog.dialog('open');
+      });
+    }
+    else {
+      $danaidsDialog.dialog('open');
+    }
   });
 
   let $danaidsDialog = $('#danaids-dialog');

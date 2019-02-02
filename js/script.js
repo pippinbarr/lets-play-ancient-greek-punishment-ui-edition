@@ -21,8 +21,14 @@ https://github.com/simeydotme/jQuery-ui-Slider-Pips
 
 ******************************************************/
 
+let mobile = false;
 
 $(document).ready(function () {
+
+  mobile = (window.screen.width < 768) && (window.screen.width < window.screen.height);
+  
+  handleOrientation();
+
 
   setupSisyphus();
   setupDanaids();
@@ -30,6 +36,19 @@ $(document).ready(function () {
   setupPrometheus();
   setupZeno();
 
+  $(window).on('resize', function () {
+    handleOrientation();
+  });
+
   // $('#zeno-dialog').dialog('open');
 
 });
+
+function handleOrientation() {
+  if (mobile && $(window).width() > $(window).height()) {
+    $('#orientation-message').show();
+  }
+  else {
+    $('#orientation-message').hide();
+  }
+}
