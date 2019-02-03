@@ -33,6 +33,15 @@ function setupPrometheus() {
       at: getNewDialogPosition(),
       of: window
     },
+    buttons: [
+      {
+        id: "prometheus-break-free-button",
+        text: "Break free",
+        click: function () {
+          console.log("This cannot happen.");
+        }
+      }
+    ],
     open: function () {
       setTimeout(function () {
         $peckDialog.dialog('open');
@@ -44,8 +53,9 @@ function setupPrometheus() {
   if (phone) {
     $prometheusDialog.dialog('option','width','90%');
   }
+
   // We disable the button at the start
-  // $('#prometheus-submit').button('disable');
+  $('#prometheus-break-free-button').button('disable');
 
   // Set the menu to be jQuery mostly so it gets styled with the stylesheet
   let $liverProgress = $('#liver-progress');
@@ -65,7 +75,7 @@ function setupPrometheus() {
     position: {
       my: "center",
       at: "center",
-      of: $prometheusDialog
+      of: $prometheusDialog.parent()
     },
     open: function () {
       let peckTime = 5;
@@ -73,8 +83,11 @@ function setupPrometheus() {
       peckTimer = setInterval(function () {
         peckTime--;
         $('#peck-time').text(peckTime);
+
+        if (peckTime === 1) $('#prometheus-s').hide();
+        else $('#prometheus-s').show();
+
         if (peckTime === 0) {
-          console.log("Autopeck");
           clearInterval(peckTimer);
           let liver = $liverProgress.progressbar('value');
           liver -= 10;

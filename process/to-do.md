@@ -21,8 +21,8 @@
 - ~~__IT REALLY WAS, BUT I FIXED IT WITH RADIO BUTTONS__ Consider how this one might be a touch underdone right now~~
 - ~~Implement as radio buttons "empty" and "full" so when you select full you can submit, but the option switches back to "empty" when you try. Hilarious.~~
 - ~~__NOPE__ Sound~~
-
-- Danaids is still a problem on mobile
+- ~~__I THINK IT'S SOLVED BY JUST MAKING THE THING GO FASTER?__ Danaids is still a problem on mobile~~
+- ~~Language pass~~
 
 # Tantalus
 
@@ -52,8 +52,7 @@
 - ~~__IT DOES__ Keep thinking about whether this one really works~~
 - ~~Have each subsequent peck appear directly over the Prometheus dialog~~
 - ~~__NOPE__ Sound~~
-
-- Language pass?
+- ~~__AND I'M GLAD I DID__ Language pass?~~
 
 # Mobile
 
@@ -66,16 +65,19 @@
 - ~~Alter Danaids design to allow touch only input (e.g. eliminate need for mouseout)~~
 - ~~Create bevelled icons with  background colours (rounded divs?)~~
 
+- Add whatever it is you need to have an icon on mobile? (Just for my own use?) - https://codetheweb.blog/2017/12/14/html-icons/
 - I'm worried about sizing of icons on different resolution devices? Or is that getting stupid?
-- Investigate unfortunate mobile behaviours
+- Investigate unfortunate mobile behaviours (notably the fact that on my phone the page is scrollable!)
 
 # Other
 - ~~Randomly position dialogs on non-phone devices for sexier aesthetics? Cluster in the center but position a bit more haphazardly?~~
+- ~~__THIS DOESN'T ACTUALLY MATTER THAT MUCH__ Make random positioning of desktop icons respect collision so they don't overlap by default?~~
 
-- Make random positioning of desktop icons respect collision so they don't overlap by default?
-
+- Is the fact Sisyphus includes no myth language a problem at this point now that all the others do?
 
 # Bugs?
 
 -  ~~__BECAUSE I WAS DISPLAYING MULTIPLE SPANS AND HIDING ONLY AFTER CREATING THE DIALOG WHICH CHANGED ITS POSITION CALCULATION__ Why the fuck does the first Zeno dialog always appear slightly higher than the subsequent ones? Eh?~~
 - ~~Get rid of keyboard input and focus as entirely as possible~~
+
+- Slight jiggle of size when Full gets moused over in Danaids because it adds a border - not a big deal but not beautiful

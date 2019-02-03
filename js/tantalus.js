@@ -39,7 +39,7 @@ function setupTantalus() {
     buttons: [
       {
         id: 'tantalus-submit',
-        text: 'Submit',
+        text: 'Eat',
         click: function () {
           // Ha ha, the whole point is that you can't successfully click this button
           console.log("This shouldn't be possible.");

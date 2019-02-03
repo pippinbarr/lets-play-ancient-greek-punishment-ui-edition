@@ -100,7 +100,7 @@
     <!-- Danaids -->
 
     <div id="danaids-dialog" class="dialog" title="Danaids">
-      <div class="instruction">Fill the bath with water.</div>
+      <div class="instruction">Fill the bath with water and then bathe.</div>
       <fieldset id="danaids-radios">
         <legend>Select a bath state: </legend>
         <label for="radio-empty">Empty</label>
@@ -126,14 +126,18 @@
 
     <div id="prometheus-dialog" class="dialog" title="Prometheus">
       <div class="instruction">
-        Protect your liver.
+        Just accept it.
       </div>
-      <div id="liver-progress"></div>
+      <fieldset>
+        <legend>Liver remaining</legend>
+        <div id="liver-progress"></div>
+      </fieldset>
+      </div>
     </div>
 
     <div id="peck-dialog" class="dialog" title="Alert: Eagle">
       <div class="instruction">
-        Your liver will lose 10% of its value in <span id="peck-time">n</span> seconds.
+        You will lose a tenth of your liver in <span id="peck-time">n</span> second<span id="prometheus-s">s</span>.
       </div>
     </div>
 

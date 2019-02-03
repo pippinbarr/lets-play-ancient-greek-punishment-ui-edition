@@ -38,7 +38,7 @@ function setupDanaids() {
     buttons: [
       {
         id: "danaids-submit",
-        text: "Submit",
+        text: "Bathe",
         click: function () {
           console.log("This should not happen.");
         }
@@ -75,8 +75,8 @@ function setupDanaids() {
         $('#radio-empty').trigger('click');
         $(':focusable').blur();
 
-      },100);
-    },100);
+      },50);
+    },50);
   });
   $('#radio-half-full').on('click',function() {
     $('#danaids-submit').button('disable');
@@ -85,8 +85,7 @@ function setupDanaids() {
     setTimeout(function () {
       $('#radio-empty').trigger('click');
       $(':focusable').blur();
-
-    },100);
+    },50);
   });
   $('#radio-empty #radio-half-full').on('click',function() {
     $('#danaids-submit').button('disable');
