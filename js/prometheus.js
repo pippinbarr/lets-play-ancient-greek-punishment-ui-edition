@@ -5,9 +5,11 @@
 // menu both options are disabled. Most of this is actually in the HTML.
 function setupPrometheus() {
   // Set up  the icon
-  let  $prometheusIcon = $('#prometheus-icon');
-  if (!touchBased) $prometheusIcon.draggable();
-  $prometheusIcon.on('dblclick touchend',function() {
+  let  $prometheusApp = $('#prometheus-icon');
+
+  setupApp($prometheusApp,'prometheus');
+
+  $prometheusApp.on('dblclick touchend',function() {
     if (phone) {
       $('#app-background').fadeIn(1000,function () {
         $prometheusDialog.dialog('open');

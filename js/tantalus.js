@@ -5,9 +5,11 @@
 // menu both options are disabled. Most of this is actually in the HTML.
 function setupTantalus() {
   // Set up  the icon
-  let  $tantalusIcon = $('#tantalus-icon');
-  if (!touchBased) $tantalusIcon.draggable();
-  $tantalusIcon.on('dblclick touchend',function() {
+  let  $tantalusApp = $('#tantalus-app');
+
+  setupApp($tantalusApp,'tantalus');
+
+  $tantalusApp.on('dblclick touchend',function() {
     if (phone) {
       $('#app-background').fadeIn(1000,function () {
         $tantalusDialog.dialog('open');

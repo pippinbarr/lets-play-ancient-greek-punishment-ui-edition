@@ -5,9 +5,12 @@
 // reverting all your efforts.
 function setupDanaids() {
   // Set up  the icon
-  let  $danaidsIcon = $('#danaids-icon');
-  if (!touchBased) $danaidsIcon.draggable();
-  $danaidsIcon.on('dblclick touchend',function() {
+  let  $danaidsApp = $('#danaids-app');
+
+  setupApp($danaidsApp,'danaids');
+
+
+  $danaidsApp.on('dblclick touchend',function() {
     if (phone) {
       $('#app-background').fadeIn(1000,function () {
         $danaidsDialog.dialog('open');

@@ -8,8 +8,7 @@
 - ~~__DID IT IN CSS__ Look into the issue of clicking on a slider pip - basically just want to disable them~~
 - ~~No closing the dialog ever~~
 - ~~Have an icon on the desktop to launch the app~~
-
-- Sound
+- ~~__NOPE__ Sound~~
 
 # Danaids
 
@@ -21,8 +20,9 @@
 - ~~Have the folder highlight to at least show you're "succeeding in targeting it"?~~
 - ~~__IT REALLY WAS, BUT I FIXED IT WITH RADIO BUTTONS__ Consider how this one might be a touch underdone right now~~
 - ~~Implement as radio buttons "empty" and "full" so when you select full you can submit, but the option switches back to "empty" when you try. Hilarious.~~
+- ~~__NOPE__ Sound~~
 
-- Sound
+- Danaids is still a problem on mobile
 
 # Tantalus
 
@@ -30,8 +30,7 @@
 - ~~Submit button that won't work if you haven't selected anything (maybe an error message?)~~
 - ~~__THE SELECT MENU IS PRETTY PERFECT__ Also consider trying: checkboxes, radio buttons, disabled buttons at the bottom? All possible. Maybe make all of them launch at once as a way to just test which feels best?~~
 - ~~Icon etc. for launching~~
-
-- Sound
+- ~~__NOPE__ Sound~~
 
 # Zeno
 
@@ -44,8 +43,7 @@
 - ~~Look at restrictions on the precision of the float to make sure behaviour works if people really go for it~~
 - ~~Add sigma expressions for when they exceed precision~~
 - ~~Add textual expressions when they exceed maximum integer in the sigma expression!!!~~
-
-- Sound
+- ~~__NOPE__ Sound~~
 
 # Prometheus
 
@@ -53,9 +51,9 @@
 - ~~Peck dialog appears on top (maybe random location on screen for desktop?) and has a countdown timer for you to cancel it within (think about the language here as it's pretty awkward?)~~
 - ~~__IT DOES__ Keep thinking about whether this one really works~~
 - ~~Have each subsequent peck appear directly over the Prometheus dialog~~
+- ~~__NOPE__ Sound~~
 
-- Language pass of course
-- Sound
+- Language pass?
 
 # Mobile
 
@@ -65,8 +63,16 @@
 - ~~TRIGGERING ON BOTH DBLCLICK AND TOUCHEND SEEMS TO WORK WELL ENOUGH HERE__ Need to distinguish "touch" versus "click" for icon launch (e.g. ipad is not "mobile" but still requires single click not dbl)~~
 - ~~The big question of whether on mobile we're just modally ONLY doing one app per (e.g. really live up to the app thing), or just let people run multiple punishments even on a little phone and screw the problems of screen realestate?~~
 - ~~Disable draggable on mobile/touch icons? (It's a bit gross when they launch the app at the end of a drag)~~
-- ~~Randomly position dialogs on non-phone devices for sexier aesthetics? Cluster in the center but position a bit more haphazardly?~~
 - ~~Alter Danaids design to allow touch only input (e.g. eliminate need for mouseout)~~
+- ~~Create bevelled icons with  background colours (rounded divs?)~~
+
+- I'm worried about sizing of icons on different resolution devices? Or is that getting stupid?
+- Investigate unfortunate mobile behaviours
+
+# Other
+- ~~Randomly position dialogs on non-phone devices for sexier aesthetics? Cluster in the center but position a bit more haphazardly?~~
+
+- Make random positioning of desktop icons respect collision so they don't overlap by default?
 
 
 # Bugs?

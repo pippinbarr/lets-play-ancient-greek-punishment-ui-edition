@@ -6,9 +6,11 @@
 
 function setupZeno() {
   // Set up  the icon
-  let  $zenoIcon = $('#zeno-icon');
-  if (!touchBased) $zenoIcon.draggable();
-  $zenoIcon.on('dblclick touchend',function() {
+  let  $zenoApp = $('#zeno-app');
+
+  setupApp($zenoApp,'zeno');
+
+  $zenoApp.on('dblclick touchend',function() {
     if (phone) {
       $('#app-background').fadeIn(1000,function () {
         $zenoDialog.dialog('open');

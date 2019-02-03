@@ -73,3 +73,16 @@ function getNewDialogPosition() {
 
   return positionAt;
 }
+
+function setupApp($element,name) {
+  if (!touchBased) {
+    $element.draggable();
+    $(`#${name}-app`).addClass('desktop-app');
+    $(`#${name}-icon`).addClass('desktop-icon');
+  }
+  else {
+    $(`#${name}-app`).addClass('phone-app');
+    $(`#${name}-icon`).addClass('phone-icon');
+  }
+  $(`#${name}-icon`).addClass(`${name}-color`);
+}

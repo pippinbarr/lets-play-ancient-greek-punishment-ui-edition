@@ -8,9 +8,10 @@ function setupSisyphus() {
   let $sisyphusDialog = $('#sisyphus-dialog');
 
   // Set up  the icon
-  let $sisyphusIcon = $('#sisyphus-icon');
-  if (!touchBased) $sisyphusIcon.draggable();
-  $sisyphusIcon.on('dblclick touchend',function() {
+  let $sisyphusApp = $('#sisyphus-app');
+  setupApp($sisyphusApp,'sisyphus');
+
+  $sisyphusApp.on('dblclick touchend',function() {
     if (phone) {
       $('#app-background').fadeIn(1000,function () {
         $sisyphusDialog.dialog('open');
