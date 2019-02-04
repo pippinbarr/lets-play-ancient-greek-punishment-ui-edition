@@ -1,6 +1,7 @@
 html {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -11,8 +12,8 @@ body {
   padding: 0;
   overflow: hidden;
   font-family: "MS Sans Serif", Arial, sans-serif;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 .dialog {
@@ -22,8 +23,8 @@ body {
 
 #wrapper {
   position: relative;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   /* overflow: hidden; */
   /* display: block; */
 }

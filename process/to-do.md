@@ -65,20 +65,18 @@
 - ~~Alter Danaids design to allow touch only input (e.g. eliminate need for mouseout)~~
 - ~~Create bevelled icons with  background colours (rounded divs?)~~
 - ~~Add whatever it is you need to have an icon on mobile? (Just for my own use?) - https://codetheweb.blog/2017/12/14/html-icons/ - That should do it.~~
+- ~~Investigate unfortunate mobile behaviours (notably the fact that on my phone the page is scrollable!) (How much do I want to care about this? I like the idea of fixing it, but it seems related to the weird ways iOS lets you minimise the UI by scrolling down on a page? It's certainly not a deal-breaker.)~~
+- ~~__F THAT__ I'm worried about sizing of icons on different resolution devices? Or is that getting stupid?~~
 
-- I'm worried about sizing of icons on different resolution devices? Or is that getting stupid?
-- Investigate unfortunate mobile behaviours (notably the fact that on my phone the page is scrollable!) (How much do I want to care about this? I like the idea of fixing it, but it seems related to the weird ways iOS lets you minimise the UI by scrolling down on a page? It's certainly not a deal-breaker.)
 
 # Other
 
 - ~~Randomly position dialogs on non-phone devices for sexier aesthetics? Cluster in the center but position a bit more haphazardly?~~
 - ~~__THIS DOESN'T ACTUALLY MATTER THAT MUCH__ Make random positioning of desktop icons respect collision so they don't overlap by default?~~
-
-- Is the fact Sisyphus includes no myth language a problem at this point now that all the others do?
+- ~~__I THINK I'M BASICALLY CONVINCED THIS IS OKAY__ Is the fact Sisyphus includes no myth language a problem at this point now that all the others do?~~
 
 # Bugs?
 
 -  ~~__BECAUSE I WAS DISPLAYING MULTIPLE SPANS AND HIDING ONLY AFTER CREATING THE DIALOG WHICH CHANGED ITS POSITION CALCULATION__ Why the fuck does the first Zeno dialog always appear slightly higher than the subsequent ones? Eh?~~
 - ~~Get rid of keyboard input and focus as entirely as possible~~
-
-- Slight jiggle of size when Full gets moused over in Danaids because it adds a border - not a big deal but not beautiful
+- ~~__WHO CARES__ Slight jiggle of size when Full gets moused over in Danaids because it adds a border - not a big deal but not beautiful~~
