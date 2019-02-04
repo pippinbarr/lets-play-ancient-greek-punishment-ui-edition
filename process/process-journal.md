@@ -256,3 +256,43 @@ That being the case I suppose it's not impossible to reimagine Dnaids "enough" t
 So that's the design versus affordance part of it, and then there's the appearance part of it. Tempting though it might be to just say "fuck it" and leave it along, I suspect that's bad karma. It seems like at least on smaller devices (phones) it would make sense for any given dialog to take up the whole screen modally so you don't have the sense of launching multiple elements (again this will require a reload to get back to the start then). That being the case there's CSS bullshit to consider in terms of it looking alright? Ideally just at a certain screen width it creates a dialog that's sized to the window width and blacks out everything behind it (or grays) so that you're just looking at that dialog?
 
 I'll have to experiment a touch. _It is as if you were making love_ should at least have some clues for getting this done. Not the end of the world.
+
+---
+
+# Mobile; Mobile Danaids; Language Games; Nearing the End (Monday, 4 February 2019, 6:43AM)
+
+__Mobile__
+
+Over the weekend I managed to get a proper mobile version working (touch wood etc.). Pretty much followed the plan from above in terms of what it looks like - each app launches solo against a grey background so you can't have multiple open, app icons are styled to look more like iPhone style stuff along with appearing in horizontal rows instead of a column.
+
+__Mobile Danaids__
+
+Also needed to rework Danaids a bit to make it mobile "unfriendly" (ha ha) - I added a "half-full" radio that allows me to switch from "full" more quickly because there's more of a visual clue as to what's happening. Now it switches fast enough that you don't have a chance to click the button (as far as I can tell). Oh, and looking at the previous entry I suppose I should explain that I changed Danaid's to a timer-based thing for going from full to empty to avoid needing the mouse-out.
+
+In fact I think the timer based version is kind of truer to the real thing right? The point is that the bathtub has holes, so naturally it's going to start emptying as soon as you fill it, rather than waiting until you move your mouse/finger away. It feels a little weird in terms of not being 100% sure it's impossible to click the button before the bath empties, but I think it's probably sufficient in the end.
+
+Question: it it fun to have even more radios? Like empty, quarter-full, half-full, three-quarters full, full? And also is it a nice idea to invert the order so that full is at the top which makes more physical sense? Which brings me, somewhat, to...
+
+__Language games__
+
+I did passes on all the games looking at the language use. And I ended up changing language in a bunch of places so that it reflected the actual myth more than it had been. E.g. Tantalus was about selecting a food and then there was a "Submit" button, more in keeping with the idea that it's a user-interface for achieving that goal, whereas now it says "Eat", which is more about a user-interface which represents that actual activity.
+
+I think I like it, but it's interesting to me how distinct those two approaches are, while also existing (I think) on the same spectrum. A question of how much these interfaces are about representing a myth versus representing ideas about interfaces (through reference to the myth)? And in the end the game is about representing the myths (I mean the series of games) so I suppose it's fair to use the myth language. But I still feel like I'm losing something by not having the studied neutrality of interface language. "Submit" is so impersonal (and frankly also great in the context of punishment - though perhaps that makes it confusing).
+
+Additionally, of all of them Sisyphus just doesn't have it at all - you're just setting a slider to a specific number. So in a way the game that began the whole thing is one that doesn't seem capable (?) of being done in the myth language style? You could label the slider with "bottom" and "top" I suppose, and have the instruction be "Move the boulder to the top of the hill" but that seems kind of off somehow.
+
+Additionally, Zeno, which is my favourite at this point (perhaps I'm just biased by the sigma expression - something I see I haven't mentioned in this journal, but see commit [ac9f78d](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-ui-edition/commit/ac9f78dab699ad21f27f7609515fe820ee7577c1)) also doesn't really use the myth language except as the joke about the idea of a "Step". It's very much in the world of the UI quite fundamentally.
+
+It's a bit like a tension between the Ancient Greek Punishment series and the It is as if series. Both are really interesting I think, and good things to do, but they have different attitudes to narrative stuff? It is as if is about having a narrative but not telling it directly (I think?) and instead providing the interface to the story without saying that's what it is so overtly. The Punishment games are about telling the narrative quite literally through interactions that are in service of the story and don't have their own specific resonance? Is that true?
+
+So I honestly don't know what to do about that - it's not necessarily something everybody would notice (the language stuff), but I do feel like it's a big of a rough edge that I could fret about. I'll keep it in mind.
+
+__Nearing the end__
+
+Well, the project is all but done. It's probably releasable now other than this language thing and a couple of very small CSS things I might or might not actually fix up. I think it's a good piece of work (though I felt ever so slightly weird showing it to people at the baby shower yesterday - but I think that's just generally how I feel about being in the same room as my own work, intensified by being the one showing it).
+
+(Actually, making sure the game is accessible from my phone definitely made it so much easier to show to people which was pretty cool, including the niceness of having my own little icon I can launch it from. So I definitely think that's a good one to remember moving forward.)
+
+I guess I look at it a bit more this morning and then probably call it a day. I'll release it next week I imagine, so should attempt to have press kits etc. done by Thursday or Friday? Release on Tuesday? Wednesday? Wednesday might be better because I don't have a class to deal with.
+
+I should probably revisit my other process documents, too, to see if I can fill anything in a bit more. Process wise I think the project has been successful... I've done substantial documentation in the commits - a lot of the moment-to-moment design stuff is in there (e.g. I didn't even write about sigma stuff here, but it's in the commits). And this journal has been more big picture, which I think is right. As for the rest it's more patchy, but that's okay, still learning what that stuff is for?
