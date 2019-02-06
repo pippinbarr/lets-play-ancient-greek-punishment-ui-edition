@@ -296,3 +296,17 @@ Well, the project is all but done. It's probably releasable now other than this 
 I guess I look at it a bit more this morning and then probably call it a day. I'll release it next week I imagine, so should attempt to have press kits etc. done by Thursday or Friday? Release on Tuesday? Wednesday? Wednesday might be better because I don't have a class to deal with.
 
 I should probably revisit my other process documents, too, to see if I can fill anything in a bit more. Process wise I think the project has been successful... I've done substantial documentation in the commits - a lot of the moment-to-moment design stuff is in there (e.g. I didn't even write about sigma stuff here, but it's in the commits). And this journal has been more big picture, which I think is right. As for the rest it's more patchy, but that's okay, still learning what that stuff is for?
+
+---
+
+# Post-press kit, pre-closing statement (Wednesday, 6 February 2019, 6:56AM)
+
+The project is basically as done as it will be at this point, all the way down to its press kit which I put together last night. Decided against having a trailer separate from the animated GIFs illustrating each minigame. I think they're perfectly effective at illustrating what this thing is all about.
+
+The big remaining thing it to write a closing statement for the game, as this is something I've kind of drifted from in the last couple of attempts. Simply because: it's hard. But it makes a lot of sense to do it as a final revisiting of the overall project, a first attempt (by the developer) to look at all the process material produced and to try to tell a specific story with them. And really a story about intent and a (very subjective) evaluation of success (pre-release I suppose).
+
+I don't think I should hold off on the closing statement until after release because I'll inevitably have started something else and the impetus will be kind of lost, all the thinking will have drained from my brain like a Danaid's bath.
+
+So, let me at least start by reading everything and listing thematic areas as well as potential commits to reference? I guess? Plus potentially images that illustrate any little stories that might be illustrative of process? Gosh I don't know. How long should this thing be? Doesn't matter. (For reference the b r 1 one was... just shy of 2,000 words. Okay.)
+
+Well anyway here I go.
