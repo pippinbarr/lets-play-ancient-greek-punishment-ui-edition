@@ -66,6 +66,7 @@ See animated GIFs below, really.
 
 ## Additional Links
 
+- [Closing Statement for _Let's Play: Ancient Greek Punishment: UI Edition_](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-ui-edition/blob/master/process/closing-statement.md)
 - [Process documentation of _Let's Play: Ancient Greek Punishment: UI Edition_](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-ui-edition/blob/master/process/README.md)
 - [Commit history of _Let's Play: Ancient Greek Punishment: UI Edition_](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-ui-edition/commits/master)
 - [Let's Play: Ancient Greek Punishment](http://www.pippinbarr.com/games/letsplayancientgreekpunishment/LetsPlayAncientGreekPunishment.html) (2011)

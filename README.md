@@ -5,6 +5,7 @@ _Let's Play: Ancient Greek Punishment: UI Edition_ is a new edition in the _Let'
 #### [Play Online](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-ui-edition/) (Mobile friendly!)
 
 #### Read the [Press kit](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-ui-edition/blob/master/press/README.md) for press information
+#### Read the [Closing Statement](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-ui-edition/blob/master/process/closing-statement.md) for high-level insights into the design of this game
 #### Read the [Process documentation](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-ui-edition/blob/master/process/README.md) for process journal, to do list, and related work
 #### Read the [Commit History](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-ui-edition/commits/master) for step-by-step information about how the project was built
 #### Look at the [Code Repository](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-ui-edition) for source code etc.

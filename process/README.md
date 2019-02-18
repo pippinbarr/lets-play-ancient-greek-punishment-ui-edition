@@ -2,6 +2,9 @@
 
 This is the process documentation wiki for the game _Let's Play: Ancient Greek Punishment: It is as if Edition_. The process documentation available here is the result of following the [MDMA](http://www.gamesasresearch.com/mdma) (Method for Design Materialisation and Analysis), an approach to game design recoverability that forms the basis of the [Games as Research](http://www.gamesasresearch.com/) project I am part of with [Rilla Khaled](http://www.rillakhaled.com/) and [Jonathan Lessard](https://jonathanlessard.net/).
 
+### [Closing Statement](./closing-statement.md)
+A final, hopefully-accessible discussion of the game with hindsight.
+
 ### [To Do](./to-do.md)
 The todo list of practical tasks for the project.
 
