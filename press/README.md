@@ -62,7 +62,7 @@ See animated GIFs below, really.
 
 ## Press
 
-- Coming soon?
+- [Ancient Greek Punishment: UI Edition – Browser Game](https://www.freegameplanet.com/ancient-greek-punishment-ui-edition-browser-game/). Free Games Planet.
 
 ## Additional Links
 
