@@ -63,6 +63,7 @@ See animated GIFs below, really.
 ## Press
 
 - [Ancient Greek Punishment: UI Edition – Browser Game](https://www.freegameplanet.com/ancient-greek-punishment-ui-edition-browser-game/). Free Games Planet.
+- [Die Bestrafung antiker Sagenhelden als Mini-Games (User Interface Edition)](https://nerdcore.de/2019/02/28/die-bestrafung-antiker-sagenhelden-als-mini-games-user-interface-edition/). Nerdcore. 28 February 2019.
 
 ## Additional Links
 
