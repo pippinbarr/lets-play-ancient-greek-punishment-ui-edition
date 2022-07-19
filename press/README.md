@@ -60,12 +60,6 @@ See animated GIFs below, really.
 
 ![Zeno](images/zeno-ui.gif)
 
-## Press
-
-- [Ancient Greek Punishment: UI Edition – Browser Game](https://www.freegameplanet.com/ancient-greek-punishment-ui-edition-browser-game/). Free Games Planet.
-- [Die Bestrafung antiker Sagenhelden als Mini-Games (User Interface Edition)](https://nerdcore.de/2019/02/28/die-bestrafung-antiker-sagenhelden-als-mini-games-user-interface-edition/). Nerdcore. 28 February 2019.
-- Joel Couture. [‘Let’s Play: Ancient Greek Punishment: UI Edition’ Inflicts Torments Through User Interfaces](https://indiegamesplus.com/2019/03/lets-play-ancient-greek-punishment-ui-edition-inflicts-torments-through-user-interfaces). Indie Games+. 20 March 2019.
-
 ## Additional Links
 
 - [Closing Statement for _Let's Play: Ancient Greek Punishment: UI Edition_](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-ui-edition/blob/master/process/closing-statement.md)
