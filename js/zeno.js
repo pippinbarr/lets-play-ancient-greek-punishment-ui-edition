@@ -9,13 +9,13 @@ function setupZeno() {
 
   setupApp($zenoApp, 'zeno');
 
-  $zenoApp.on('dblclick touchend', function() {
+  $zenoApp.on('dblclick touchend', function () {
     if (phone) {
-      $('#app-background').fadeIn(1000, function() {
-        $zenoDialog.dialog('open');
-      });
-    }
-    else {
+      $('#app-background')
+        .fadeIn(1000, function () {
+          $zenoDialog.dialog('open');
+        });
+    } else {
       $zenoDialog.dialog('open');
     }
   });
@@ -34,8 +34,8 @@ function setupZeno() {
   // plainText = false;
 
   // Text mode
-  sigma = false;
-  plainText = true;
+  // sigma = false;
+  // plainText = true;
 
   let $zenoDialog = $('#zeno-dialog');
 
@@ -54,34 +54,35 @@ function setupZeno() {
     },
     // You can specify buttons as an array of objects to get finer-grained control
     // In this instance I want to assign an id for later reference
-    open: function() {
+    open: function () {
       if (step === 0 || steps === -1) {
-        $('#zeno-step-text').hide();
-        $('#zeno-welcome-text').show();
-      }
-      else {
-        $('#zeno-step-text').show();
-        $('#zeno-welcome-text').hide();
+        $('#zeno-step-text')
+          .hide();
+        $('#zeno-welcome-text')
+          .show();
+      } else {
+        $('#zeno-step-text')
+          .show();
+        $('#zeno-welcome-text')
+          .hide();
       }
     },
     buttons: [{
         id: "zeno-previous",
         text: "< Previous",
-        click: function() {
+        click: function () {
           $zenoDialog.dialog('close');
           steps--;
           step -= (2 - step);
           if (sigma) {
             setSigmaExpression(steps);
-          }
-          else if (!plainText) {
+          } else if (!plainText) {
             setNumberedStep(step);
-          }
-          else {
+          } else {
             setTextStep(step);
           }
 
-          setTimeout(function() {
+          setTimeout(function () {
             $zenoDialog.dialog('open');
           }, 500);
         }
@@ -89,14 +90,13 @@ function setupZeno() {
       {
         id: "zeno-next",
         text: "Next >",
-        click: function() {
+        click: function () {
           $zenoDialog.dialog('close');
           steps++;
           if (steps === Number.MAX_SAFE_INTEGER) {
             sigma = false;
             plainText = true;
-          }
-          else {
+          } else {
             step += (2 - step) / 2;
             if (!sigma && step >= 2) {
               sigma = true;
@@ -105,15 +105,13 @@ function setupZeno() {
 
           if (sigma) {
             setSigmaExpression(steps);
-          }
-          else if (!plainText) {
+          } else if (!plainText) {
             setNumberedStep(step);
-          }
-          else {
+          } else {
             setTextStep(step);
           }
 
-          setTimeout(function() {
+          setTimeout(function () {
             $zenoDialog.dialog('open');
           }, 500);
         }
@@ -125,37 +123,52 @@ function setupZeno() {
     $zenoDialog.dialog('option', 'width', '90%');
   }
 
-  $('#zeno-previous').button('disable');
+  $('#zeno-previous')
+    .button('disable');
 
 
   // Get rid of the 'x' button on the menu bar
-  $zenoDialog.parent().find(".ui-dialog-titlebar-close").hide();
+  $zenoDialog.parent()
+    .find(".ui-dialog-titlebar-close")
+    .hide();
 }
 
 function setSigmaExpression(steps) {
   let sigmaExpression = "\\( \\sum_{n=0}^{" + steps + "} (\\frac{1}{2})^n \\)"
-  $('#zeno-sigma-expression').html(sigmaExpression);
+  $('#zeno-sigma-expression')
+    .html(sigmaExpression);
   MathJax.Hub.Queue(["Typeset", MathJax.Hub, "zeno-sigma-expression"]);
 
-  $('#zeno-sigma-step').show();
-  $('#zeno-numbered-step').hide();
-  $('#zeno-text-step').hide();
+  $('#zeno-sigma-step')
+    .show();
+  $('#zeno-numbered-step')
+    .hide();
+  $('#zeno-text-step')
+    .hide();
 }
 
 function setNumberedStep(step) {
-  $('#zeno-step').text(step);
+  $('#zeno-step')
+    .text(step);
 
-  $('#zeno-sigma-step').hide();
-  $('#zeno-text-step').hide();
-  $('#zeno-numbered-step').show();
+  $('#zeno-sigma-step')
+    .hide();
+  $('#zeno-text-step')
+    .hide();
+  $('#zeno-numbered-step')
+    .show();
 }
 
 function setTextStep(step) {
-  $('#zeno-text-step').text(textSteps[Math.floor(Math.random() * textSteps.length)]);
+  $('#zeno-text-step')
+    .text(textSteps[Math.floor(Math.random() * textSteps.length)]);
 
-  $('#zeno-sigma-step').hide();
-  $('#zeno-numbered-step').hide();
-  $('#zeno-text-step').show();
+  $('#zeno-sigma-step')
+    .hide();
+  $('#zeno-numbered-step')
+    .hide();
+  $('#zeno-text-step')
+    .show();
 }
 
 
